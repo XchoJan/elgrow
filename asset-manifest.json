@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.5eee3aa0.css",
-    "main.js": "/elgrow/static/js/main.52bd8a31.js",
+    "main.css": "/elgrow/static/css/main.122462a1.css",
+    "main.js": "/elgrow/static/js/main.7d1afd8a.js",
     "static/js/453.d9054efb.chunk.js": "/elgrow/static/js/453.d9054efb.chunk.js",
     "static/media/portfolio2.png": "/elgrow/static/media/portfolio2.3661c813568a73b5f56c.png",
     "static/media/portfolio3.png": "/elgrow/static/media/portfolio3.80fed26578bc93a44207.png",
+    "static/media/Winston-Regular.ttf": "/elgrow/static/media/Winston-Regular.0d06021039c3cbb4ef4e.ttf",
+    "static/media/Winston-SemiBold.ttf": "/elgrow/static/media/Winston-SemiBold.d4707eec5f8b412922cb.ttf",
+    "static/media/Winston-Medium.ttf": "/elgrow/static/media/Winston-Medium.ff8b87cafe1a3fff4af6.ttf",
     "static/media/main1.png": "/elgrow/static/media/main1.0116424fcd768c773938.png",
     "static/media/main2.png": "/elgrow/static/media/main2.1d8611c42f07eee63f6b.png",
     "static/media/main3.png": "/elgrow/static/media/main3.37ede51d9e75ca1e7b51.png",
@@ -20,12 +23,12 @@
     "static/media/arrow-left.svg": "/elgrow/static/media/arrow-left.0db7e54efb27708128c450c5c38832b1.svg",
     "static/media/Subtract.svg": "/elgrow/static/media/Subtract.963a75351a9330259b32b7ac5b20e83d.svg",
     "static/media/caseArrow.svg": "/elgrow/static/media/caseArrow.fc42530ea3ba79c8cad1499c05c4bb5c.svg",
-    "main.5eee3aa0.css.map": "/elgrow/static/css/main.5eee3aa0.css.map",
-    "main.52bd8a31.js.map": "/elgrow/static/js/main.52bd8a31.js.map",
+    "main.122462a1.css.map": "/elgrow/static/css/main.122462a1.css.map",
+    "main.7d1afd8a.js.map": "/elgrow/static/js/main.7d1afd8a.js.map",
     "453.d9054efb.chunk.js.map": "/elgrow/static/js/453.d9054efb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5eee3aa0.css",
-    "static/js/main.52bd8a31.js"
+    "static/css/main.122462a1.css",
+    "static/js/main.7d1afd8a.js"
   ]
 }
