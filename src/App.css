@@ -4,13 +4,51 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Winston";
+    src: url("./assets/fonts/Winston-Medium.ttf") format("truetype"),
+    url("./assets/fonts/Winston-Regular.ttf") format("truetype"),
+    url("./assets/fonts/Winston-SemiBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Winston";
+    src: url("./assets/fonts/Winston-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Winston";
+    src: url("./assets/fonts/Winston-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Winston";
+    src: url("./assets/fonts/Winston-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Winston", sans-serif;
 }
-
+.headerMinHeight{
+    height: 100px;
+}
+.portfolioHeaderWhite{
+    height: 100px;
+    background-color: #fff;
+    width: 100%
+}
 .mainContainer {
     display: flex;
     width: 100%;
@@ -40,23 +78,18 @@ html, body {
 .headeRrightElem {
     width: 25%;
     padding-top: 40px;
+    height: 60px;
 }
 
 .rightElemTitle {
-    padding-top: 30px;
     font-size: 18px;
     color: #707070;
-    padding-left: 24px;
     line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
-.rightElemTitle:hover {
-    padding-top: 30px;
-    font-size: 18px;
-    color: #000;
-    padding-left: 24px;
-    cursor: pointer;
-}
+
 
 .mainImages {
     width: 100%;
@@ -86,14 +119,14 @@ html, body {
 }
 
 .subtractBox {
-    display: flex;
     width: 55%;
-    justify-content: center;
     padding-top: 8px;
+    margin: 0 auto;
 }
 
 .subtract {
-    display: none;
+  display: none;
+  width: auto;
 }
 
 .tabContainer:hover .subtract {
@@ -101,7 +134,10 @@ html, body {
 }
 
 .tabContainer {
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainDescriptionBox {
@@ -109,6 +145,12 @@ html, body {
     bottom: 80px;
     left: 60px;
     width: 600px;
+}
+
+.mainDescription{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px
 }
 
 .elgrowLogo {
@@ -129,7 +171,7 @@ html, body {
 }
 
 .mainBottomContentImg {
-    width: 268px;
+    width: 250px;
     height: 160px;
     border-radius: 80px;
     object-fit: cover;
@@ -167,6 +209,11 @@ html, body {
     color: #BDBDBD;
     font-weight: 600;
     font-size: 24px;
+    margin-bottom: 24px;
+    width: fit-content;
+}
+.servicesFiltersElem:hover{
+    color: #000
 }
 .servicesActiveFiltersElem {
     cursor: pointer;
@@ -251,19 +298,57 @@ html, body {
     text-align: center;
     margin-bottom: 40px;
     cursor: pointer;
+    color: black;
 }
 
 
 .portfolioHeader{
-    height: 260px;
     position: sticky;
-    z-index: 10;
+    top: 0;
+    background-color: #fff;
+    z-index: 3;
+    height: 100px;
 }
 
 .portfolioImgWrapper{
-    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.portfolioElemContainer{
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.portfolioElemImg{
+    width: 100%;
+}
+
+.portfolioElemImgAnim{
+    width: 100%;
+    height: 100%;
+    background-color: #0000004D;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.portfolioElemContainer:hover .portfolioElemImgAnim{
+    display: flex;
+}
+
+.portfolioElemImgAnimText{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+
+}
 .imagesContainer{
     display: flex;
     flex-direction: row;
@@ -279,7 +364,7 @@ html, body {
     width: 100%;
     height: 100vh;
     position: absolute;
-    left: -100%; /* Начинается за пределами экрана */
+    left: -200%;
     top: 0;
     z-index: 2;
     display: flex;
@@ -290,16 +375,15 @@ html, body {
 }
 
 
-
 .formLeft{
-    width: 42%;
+    width: 35%;
     background-color: #FFFFFF;
     height: 100%;
-    padding-top: 120px;
+    padding-top: 60px;
     position: relative;
 }
 .formRight{
-    width: 58%;
+    width: 65%;
     background-color: #00000099;
     height: 100%;
 }
@@ -336,23 +420,29 @@ html, body {
     padding: 10px 20px;
     background-color: #000;
     color: #fff;
-    border: none;
     border-radius: 100px;
     cursor: pointer;
     font-size: 16px;
     width: 380px;
     margin: 24px auto;
     text-align: center;
+    border: 1px solid black;
+
 }
 
 .form-submit-btn:hover {
     background-color: #333;
 }
+.form-submit-btn:active {
+    background-color: #fff;
+    color: black;
+    border-radius: 100px;
+    border: 1px solid black;
+}
 
 .form-radio-container {
     max-width: 360px;
     margin: 0 auto;
-
 }
 
 .form-label {
@@ -393,7 +483,7 @@ html, body {
     align-items: center;
     justify-content: center;
     top: 45%;
-    left: 91%;
+    left: 90%;
     position: absolute;
     cursor: pointer
 }
@@ -406,7 +496,40 @@ html, body {
     color: #0D0D0D;
 }
 
+.formBottomContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.horizontalLine{
+    width: 124px;
+    height: 1px;
+    background-color: #BDBDBD;
+    margin-top: 4px;
+}
+.orText{
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
+.formContactsBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 1440px) {
+    .formLeft{
+        width: 50%;
+    }
+    .formRight{
+        width: 50%;
+    }
+
+}
 
 
 @media (max-width: 1025px) {
@@ -416,7 +539,7 @@ html, body {
 
     .menuBtn {
         display: block;
-        padding-top: 20px;
+        padding-top: 40px;
         padding-right: 60px;
 
     }
@@ -432,7 +555,7 @@ html, body {
         position: absolute;
         top: 124px;
         left: 42%;
-        width: 600px;
+        width: 450px;
         font-size: 24px;
     }
 
@@ -447,6 +570,13 @@ html, body {
     .servicesActiveFiltersDescription{
         font-size: 24px;
         width: 350px;
+    }
+
+    .formLeft{
+        width: 65%;
+    }
+    .formRight{
+        width: 35%;
     }
 }
 
@@ -467,8 +597,15 @@ html, body {
 
     .mainDescriptionBox {
         left: 40%;
-        width: 100%;
+        width: 60%;
+
     }
+    .mainDescription{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px
+    }
+
 
     .servicesFilters{
         flex-direction: row;
@@ -503,6 +640,27 @@ html, body {
         width: 100%;
         height: 420px;
     }
+    .mainBottomContent{
+        overflow-x: auto;
+    }
+    .formLeft{
+        width: 100%;
+    }
+    .formRight{
+        width: 0%;
+    }
+
+
+    .portfolioImgWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolioElemContainer{
+        width: 100%;
+    }
+
 
 }
 
@@ -533,6 +691,16 @@ html, body {
     .portfolioTopImg{
         width: 100%;
         height: 315px;
+    }
+    .mainBottomContentBtn{
+        width: 170px;
+    }
+    .mainBottomContent{
+        overflow-x: auto;
+    }
+    .mainBottomContentImg {
+        width: 170px;
+        height: 116px;
     }
 }
 

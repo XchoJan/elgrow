@@ -64,10 +64,10 @@ const MenuModal:React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
 
       <div>
 
-        <Link onClick={()=> dispatch(setMenuVisibility(false))} style={{ textDecoration: 'none' }} to={'/services'}>
+        <Link onClick={()=> dispatch(setMenuVisibility(false))} style={{ textDecoration: 'none', color: 'black' }} to={'/services'}>
           <p className="servicesTitles">услуги</p>
         </Link>
-        <Link onClick={()=> dispatch(setMenuVisibility(false))} style={{ textDecoration: 'none' }} to={'/portfolio'}>
+        <Link onClick={()=> dispatch(setMenuVisibility(false))} style={{ textDecoration: 'none', color: 'black' }} to={'/portfolio'}>
           <p className="servicesTitles">портфолио</p>
         </Link>
         <p className="servicesTitles">контакты</p>

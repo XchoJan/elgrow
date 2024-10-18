@@ -9,9 +9,7 @@ interface TabProps {
 const Tab: React.FC<TabProps> = ({ title }) => (
   <span className="tabContainer">
     <span className="rightElemTitle">{title}</span>
-    <div className="subtractBox">
-      <img className="subtract" src={Subtract} alt="" />
-    </div>
+    <img className="subtract" src={Subtract} alt="" />
   </span>
 );
 

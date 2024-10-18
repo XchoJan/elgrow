@@ -63,21 +63,26 @@ const MainScreen: React.FC = () => {
           </div>
         </div>
         <MenuBtn />
-        <div onClick={()=> setIsVisibleForm(true)} className="contactUsBtnContainer">
+        <div
+          onClick={() => setIsVisibleForm(true)}
+          className="contactUsBtnContainer"
+        >
           <ContactUsBtn />
         </div>
 
         <div className="mainDescriptionBox">
-          <span>
+          <span className="mainDescription">
             Разработка и интеграция IT-решений <br /> Автоматизация бизнеса{' '}
             <br /> Аутстаффинг специалистов
           </span>
         </div>
         <img className="elgrowLogo" src={ElgrowLogo} alt="Elgrow Logo" />
       </div>
-      <Form onClickClose={()=> setIsVisibleForm(false)} isVisible={isVisibleForm}/>
 
-
+      <Form
+        onClickClose={() => setIsVisibleForm(false)}
+        isVisible={isVisibleForm}
+      />
 
       <div className="mainBottomContent">
         <Link style={{ textDecoration: 'none' }} to={'/services'}>
@@ -102,16 +107,17 @@ const MainScreen: React.FC = () => {
           </div>
         </Link>
         <div className="line" />
-        <div className="mainBottomContentBtn">
-          <img
-            className="mainBottomContentImg"
-            src={require('../../assets/images/block2.png')}
-            alt="Contacts Block"
-          />
-          <p>Контакты</p>
-        </div>
+        <Link style={{ textDecoration: 'none' }} to={''}>
+          <div className="mainBottomContentBtn">
+            <img
+              className="mainBottomContentImg"
+              src={require('../../assets/images/block2.png')}
+              alt="Contacts Block"
+            />
+            <p>Контакты</p>
+          </div>
+        </Link>
       </div>
-
     </div>
   );
 };

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Winston'; /* Имя вашего шрифта */
+    src: url('./assets/fonts/MyCustomFont.woff2') format('woff2'), /* Путь к вашему файлу шрифта */
+    url('./assets/fonts/MyCustomFont.woff') format('woff'); /* Другой формат, если у вас есть */
+    font-weight: normal; /* Вес шрифта */
+    font-style: normal; /* Стиль шрифта */
+}

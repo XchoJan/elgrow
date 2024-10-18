@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
 
 import LeftArrow from '../assets/svg/arrow-left.svg';
+
+import AnimatedCases from './animated-cases';
+
 interface FormProps {
   isVisible: boolean,
   onClickClose: any
 }
-const Form: React.FC<FormProps> = ({ isVisible, onClickClose }: FormProps) => {
+const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormProps) => {
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const [input3, setInput3] = useState('');
@@ -45,53 +50,62 @@ const Form: React.FC<FormProps> = ({ isVisible, onClickClose }: FormProps) => {
       <div className="formLeft">
         <div className="form-container">
 
-
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label className="form-label" htmlFor="name">Имя</label>
-              <input
-                id="name"
+            <FloatingLabel
+              controlId="floatingName"
+              label="Имя"
+              className="mb-3"
+            >
+              <Form.Control
                 type="text"
+                placeholder="Введите ваше имя"
                 value={input1}
                 onChange={handleInput1Change}
-                className="form-input"
+                style={{  border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
               />
-            </div>
+            </FloatingLabel>
 
-            <div className="form-group">
-              <label className="form-label" htmlFor="company">Компания</label>
-              <input
-                id="company"
+            <FloatingLabel
+              controlId="floatingCompany"
+              label="Компания"
+              className="mb-3"
+            >
+              <Form.Control
                 type="text"
+                placeholder="Введите название компании"
                 value={input2}
                 onChange={handleInput2Change}
-                className="form-input"
+                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
               />
-            </div>
+            </FloatingLabel>
 
-            <div className="form-group">
-              <label className="form-label" htmlFor="phone">Номер телефона</label>
-              <input
-                id="phone"
+            <FloatingLabel
+              controlId="floatingPhone"
+              label="Номер телефона"
+              className="mb-3"
+            >
+              <Form.Control
                 type="text"
+                placeholder="Введите номер телефона"
                 value={input3}
                 onChange={handleInput3Change}
-                className="form-input"
+                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
               />
-            </div>
+            </FloatingLabel>
 
-            <div className="form-group">
-              <label className="form-label" htmlFor="task">Расскажите о вашей задаче</label>
-              <input
-                id="task"
+            <FloatingLabel
+              controlId="floatingTask"
+              label="Расскажите о вашей задаче"
+              className="mb-3"
+            >
+              <Form.Control
                 type="text"
+                placeholder="Опишите задачу"
                 value={input4}
                 onChange={handleInput4Change}
-                className="form-input"
+                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
               />
-            </div>
-
-
+            </FloatingLabel>
           </form>
         </div>
 
@@ -123,8 +137,18 @@ const Form: React.FC<FormProps> = ({ isVisible, onClickClose }: FormProps) => {
           Политика обработки персональных данных
         </p>
 
-        <div>
-
+        <div className="formBottomContent">
+          <div className="formBottomContent">
+            <div className="horizontalLine"/>
+            <span className="orText">или</span>
+            <div className="horizontalLine"/>
+          </div>
+        </div>
+        <div style={{ marginBottom: '32px' }}/>
+        <div className="formContactsBox">
+          <AnimatedCases title={'Заполнить бриф'}/>
+          <div style={{ marginBottom: '32px' }}/>
+          <AnimatedCases title={'Написать в Telegram'}/>
         </div>
 
 
@@ -138,9 +162,8 @@ const Form: React.FC<FormProps> = ({ isVisible, onClickClose }: FormProps) => {
 
 
       <div className="formRight"/>
-      {/*width 100% dnem kisem 2 masi 2rd kesy opacitiov*/}
     </div>
   );
 };
 
-export default Form;
+export default FormContainer;

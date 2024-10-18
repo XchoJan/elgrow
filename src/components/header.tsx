@@ -6,10 +6,13 @@ import AppLogo from '../assets/svg/logo.svg';
 import Tab from './tab';
 import MenuBtn from './menu-btn';
 
-const Header: React.FC = () => (
+interface HeaderProps {
+  minHeight?: boolean
+}
+const Header: React.FC<HeaderProps> = ({ minHeight }: any) => (
   <>
     <div style={{ width: '100%', height: '120px' }}>
-      <div className="mainContainer">
+      <div style={minHeight ? { height: '100px' } : { height: '100vh' }} className="mainContainer">
         <div className="mainLogoBox">
           <Link style={{ textDecoration: 'none' }} to={'/'}>
             <img className="headerAppLogo" src={AppLogo} alt="" />

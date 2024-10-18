@@ -44,13 +44,13 @@ const ServicesScreen: React.FC = () => {
       <div className="servicesBox">
         <div className="servicesFilters">
           {filters.map((item, index: any) => (
-            <p
+            <span
               key={index}
               className={`servicesFiltersElem ${activeFilter.name === item.name ? 'servicesActiveFiltersElem' : ''}`}
               onClick={() => setActiveFilter(item)}
             >
               {item.name}
-            </p>
+            </span>
           ))}
         </div>
 

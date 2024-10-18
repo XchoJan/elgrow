@@ -7,7 +7,7 @@ import PortfolioScreen from '../screens/PortfolioScreen/portfolio-screen';
 import Wrapper from '../components/wrapper';
 
 const RootRouter: React.FC = () => (
-  <Router>
+  <Router basename="/elgrow">
     <Wrapper>
       <Routes>
         <Route path="/" element={<MainScreen />} />
