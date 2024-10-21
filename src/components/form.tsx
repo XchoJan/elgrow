@@ -3,9 +3,9 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 
 import LeftArrow from '../assets/svg/arrow-left.svg';
+import CloseIcon from '../assets/svg/close.svg';
 
 import AnimatedCases from './animated-cases';
-
 interface FormProps {
   isVisible: boolean,
   onClickClose: any
@@ -48,8 +48,11 @@ const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormPro
   return (
     <div  className={`formModal ${isVisible && 'formModalVisible'}`}>
       <div className="formLeft">
-        <div className="form-container">
 
+        <div className="form-container">
+          <div onClick={onClickClose} className="formCloseIcon">
+            <img src={CloseIcon}/>
+          </div>
           <form onSubmit={handleSubmit}>
             <FloatingLabel
               controlId="floatingName"
@@ -61,7 +64,7 @@ const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormPro
                 placeholder="Введите ваше имя"
                 value={input1}
                 onChange={handleInput1Change}
-                style={{  border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
+                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0, boxShadow: 'none', outline: 'none' }}
               />
             </FloatingLabel>
 
@@ -75,7 +78,7 @@ const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormPro
                 placeholder="Введите название компании"
                 value={input2}
                 onChange={handleInput2Change}
-                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
+                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0, boxShadow: 'none', outline: 'none' }}
               />
             </FloatingLabel>
 
@@ -89,7 +92,7 @@ const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormPro
                 placeholder="Введите номер телефона"
                 value={input3}
                 onChange={handleInput3Change}
-                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
+                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0, boxShadow: 'none', outline: 'none' }}
               />
             </FloatingLabel>
 
@@ -103,7 +106,7 @@ const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormPro
                 placeholder="Опишите задачу"
                 value={input4}
                 onChange={handleInput4Change}
-                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0 }}
+                style={{ border: 0, borderBottom: '1px solid #BDBDBD', borderRadius: 0, boxShadow: 'none', outline: 'none' }}
               />
             </FloatingLabel>
           </form>
@@ -149,6 +152,8 @@ const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormPro
           <AnimatedCases title={'Заполнить бриф'}/>
           <div style={{ marginBottom: '32px' }}/>
           <AnimatedCases title={'Написать в Telegram'}/>
+          <div style={{ marginBottom: '32px' }}/>
+
         </div>
 
 

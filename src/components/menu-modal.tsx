@@ -7,6 +7,9 @@ import img1 from '../assets/images/block.png';
 import img2 from '../assets/images/block1.png';
 import img3 from '../assets/images/block2.png';
 import { setMenuVisibility } from '../store/features/exampleSlice';
+import ElgrowLogo from '../assets/svg/elgrow.svg';
+
+import AnimatedCases from './animated-cases';
 
 interface MenuModalProps {
   isVisible: boolean
@@ -21,7 +24,7 @@ const MenuModal:React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
         <img className="headerAppLogo" src={AppLogo} alt="App Logo" />
         <p
           onClick={() => dispatch(setMenuVisibility(false))}
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: 'pointer', fontWeight: '600' }}
         >
           на главную
         </p>
@@ -73,7 +76,26 @@ const MenuModal:React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
         <p className="servicesTitles">контакты</p>
       </div>
 
+      <div style={{ display: 'flex' }}>
+        <div style={{ marginLeft: '40px' }}>
+          <img className="elgrowLogoMenu" src={ElgrowLogo} alt="Elgrow Logo" />
+          <p className="elgrowDescriptionMenu">
+            Разработка и интеграция IT-решений
+            Автоматизация бизнеса
+            Аутстаффинг специалистов
+          </p>
+        </div>
 
+        <div className="menuCases">
+          <AnimatedCases title={'Стать клиентом'}/>
+          <div style={{ marginRight: '40px' }}/>
+          <div style={{ marginBottom: '24px' }}/>
+          <AnimatedCases title={'Telegram'}/>
+        </div>
+      </div>
+
+
+      <div className="menuLine"/>
     </div>
   );
 };

@@ -49,6 +49,14 @@ html, body {
     background-color: #fff;
     width: 100%
 }
+.menuLine{
+    width: 1px;
+    height: 100vh;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
 .mainContainer {
     display: flex;
     width: 100%;
@@ -107,8 +115,41 @@ html, body {
     padding-right: 16px;
     cursor: pointer;
 }
+
+.contactUsBtnReversed {
+    width: 197px;
+    height: 76px;
+    background-color: #E6E6E6;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.contactUsBtnImg{
+    width: 78px;
+    height: 78px;
+    margin-left: 18px
+}
+.contactUsBtnImgReversed{
+    width: 60px;
+    height: 60px;
+    margin-right: 18px
+}
+.contactUsBtnTitle{
+    font-size: clamp(1.125rem, 1.059rem + 0.26vw, 1.375rem);
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 18px
+}
 .contactUsBtn:hover{
     width: 310px;
+    transition: 0.4s;
+}
+.contactUsBtnReversed:hover{
+    width: 210px;
     transition: 0.4s;
 }
 
@@ -116,6 +157,12 @@ html, body {
     position: absolute;
     left: 0;
     top: 50%;
+}
+.contactUsBtnContainerReversed {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 82%;
 }
 
 .subtractBox {
@@ -133,6 +180,17 @@ html, body {
     display: block;
 }
 
+.tabContainer.active .rightElemTitle {
+    color: black;
+}
+
+.tabContainer.active .subtract {
+    display: block;
+}
+.tabContainer:hover .rightElemTitle{
+    color: black;
+}
+
 .tabContainer {
     display: flex;
     flex-direction: column;
@@ -140,6 +198,10 @@ html, body {
     justify-content: center;
 }
 
+.Form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
 .mainDescriptionBox {
     position: absolute;
     bottom: 80px;
@@ -149,7 +211,7 @@ html, body {
 
 .mainDescription{
     font-weight: 500;
-    font-size: 28px;
+    font-size: clamp(1rem, 0.77rem + 0.92vw, 1.875rem);
     line-height: 34px
 }
 
@@ -181,6 +243,8 @@ html, body {
     width: 1px;
     height: 207px;
     background-color: #CFCFCF;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .rightElemTitleContainer {
@@ -221,11 +285,11 @@ html, body {
 }
 
 .servicesActiveFiltersDescription{
-    font-size: 40px;
+    font-size: clamp(1.75rem, 1.553rem + 0.79vw, 2.5rem);
     font-weight: 400;
     line-height: 50px;
     color: #0D0D0D;
-    width: 550px;
+    white-space: pre-line;
 }
 
 .casesBox{
@@ -257,6 +321,7 @@ html, body {
     top: 0;
     transition: left 1s ease;
     width: 100%;
+    display: none;
 }
 .menuHeader{
     display: flex;
@@ -267,24 +332,37 @@ html, body {
 
 .menuContainerVisible {
     left: 0;
+    display: block;
 }
 
 .header {
     overflow: hidden;
     height: 165px;
     position: relative;
+    z-index: 1;
 }
 
+.elgrowLogoMenu{
+    width: 280px;
+    height: 83px;
+    margin-top: 32px;
+}
+.elgrowDescriptionMenu{
+    width: 312px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 24px
+}
 .ticker-wrapper__first-half {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 165px;
-    transform: translate(100%, 0);
-    animation: ticker 60s infinite linear forwards;
+    transform: translate(100%, 0%);
+    animation: ticker 30s infinite linear forwards;
 }
 .ticker-wrapper{
-    width: 1500px;
+    width: 100%;
     height: 165px;
     margin-bottom: 40px;
 }
@@ -374,7 +452,10 @@ html, body {
     left: 0
 }
 
-
+.formCloseIcon{
+    display: none;
+    justify-content: flex-end;
+}
 .formLeft{
     width: 35%;
     background-color: #FFFFFF;
@@ -520,6 +601,23 @@ html, body {
     align-items: center;
 }
 
+.mainBottomContentLink{
+    text-decoration: none;
+    border-right: 1px solid grey;
+    padding-right: 24px;
+
+}
+
+.mainBottomContentLeftPadding{
+    padding-left: 24px;
+}
+
+.menuCases{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-left: 40px
+}
 
 @media (max-width: 1440px) {
     .formLeft{
@@ -554,8 +652,8 @@ html, body {
     .mainDescriptionBox {
         position: absolute;
         top: 124px;
-        left: 42%;
-        width: 450px;
+        left: 30%;
+        width: 80%;
         font-size: 24px;
     }
 
@@ -565,11 +663,6 @@ html, body {
         bottom: 24px;
         justify-content: space-around;
         width: 100%;
-    }
-
-    .servicesActiveFiltersDescription{
-        font-size: 24px;
-        width: 350px;
     }
 
     .formLeft{
@@ -587,7 +680,18 @@ html, body {
         border-radius: 80px;
         object-fit: cover;
     }
+    .formCloseIcon{
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 30px;
 
+    }
+    .formCloseCircle{
+        display: none;
+    }
     .elgrowLogo {
         right: 40px;
         width: 50%;
@@ -596,13 +700,12 @@ html, body {
     }
 
     .mainDescriptionBox {
-        left: 40%;
-        width: 60%;
-
+        left: 38%;
+        width: 85%;
     }
+
     .mainDescription{
         font-weight: 500;
-        font-size: 24px;
         line-height: 30px
     }
 
@@ -613,11 +716,10 @@ html, body {
         width: 100%;
         white-space: nowrap;
         overflow-x: auto;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
-    .servicesActiveFiltersDescription{
-        font-size: 34px;
-        width: 380px;
-    }
+
     .servicesFiltersElem{
         margin-right: 24px;
         font-size: 20px;
@@ -649,8 +751,6 @@ html, body {
     .formRight{
         width: 0%;
     }
-
-
     .portfolioImgWrapper{
         width: 100%;
         display: flex;
@@ -660,31 +760,78 @@ html, body {
     .portfolioElemContainer{
         width: 100%;
     }
+    .contactUsBtn {
+        width: 211px;
+        height: 76px
+    }
+    .contactUsBtnImg{
+        width: 60px;
+        height: 60px
+    }
 
-
+    .elgrowLogoMenu{
+        min-width: 220px;
+        height: 65px;
+        margin-top: 24px;
+        margin-left: -30px;
+    }
+    .elgrowDescriptionMenu{
+        max-width: 200px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 24px
+    }
+    .mainContainer{
+        padding-left: 30px;
+    }
+    .menuBtn {
+        padding-right: 30px;
+    }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
+    .menuBtn {
+        padding-right: 20px;
+
+    }
+    .contactUsBtnContainer{
+        display: none
+    }
+    .contactUsBtnContainerReversed{
+        display: block;
+    }
+    .mainContainer{
+        padding-left: 16px;
+    }
+    .elgrowLogo{
+        top: 33%;
+        width: 350px;
+        height: 101px;
+        left: 16px;
+        margin-top: 16px;
+    }
     .servicesBox {
-        display: flex;
+        display: block;
+        margin: 0 auto;
         padding-top: 10%;
         width: 100%;
         padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .servicesActiveFiltersDescription{
-        font-size: 28px;
-        width: 356px;
+    .mainDescriptionBox{
+        left: 14%;
+        width: 100%;
+        font-weight: 500;
+        line-height: 20px;
+        height: fit-content;
     }
+
     .servicesFiltersElem{
         margin-right: 24px;
         font-size: 20px;
     }
-    .servicesBox{
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-    }
+
     .servicesDescriptionBox{
         margin-left: 16px;
     }
@@ -697,10 +844,36 @@ html, body {
     }
     .mainBottomContent{
         overflow-x: auto;
+        top: 55%;
+        height: fit-content;
+        padding-left: 14px
     }
     .mainBottomContentImg {
         width: 170px;
         height: 116px;
+    }
+    .contactUsBtnContainer{
+        top: 80%;
+    }
+    .contactUsBtnReversed{
+        display: flex;
+    }
+
+    .elgrowLogoMenu{
+       display: none;
+    }
+    .elgrowDescriptionMenu{
+       display: none;
+    }
+    .menuLine{
+        left: 38%;
+    }
+    .menuCases{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 120px;
+        justify-content: flex-end;
+        margin-top: 34%;
     }
 }
 

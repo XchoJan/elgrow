@@ -6,8 +6,8 @@ import ContactUsBtn from '../../components/contact-us-btn';
 import Tab from '../../components/tab';
 import ElgrowLogo from '../../assets/svg/elgrow.svg';
 import MenuBtn from '../../components/menu-btn';
-import { setMenuVisibility } from '../../store/features/exampleSlice';
 import Form from '../../components/form';
+import ContactUsBtnReversed from '../../components/contact-us-btn-reversed';
 
 const MainScreen: React.FC = () => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
@@ -63,11 +63,19 @@ const MainScreen: React.FC = () => {
           </div>
         </div>
         <MenuBtn />
+
         <div
           onClick={() => setIsVisibleForm(true)}
           className="contactUsBtnContainer"
         >
           <ContactUsBtn />
+        </div>
+
+        <div
+          onClick={() => setIsVisibleForm(true)}
+          className="contactUsBtnContainerReversed"
+        >
+          <ContactUsBtnReversed />
         </div>
 
         <div className="mainDescriptionBox">
@@ -85,36 +93,36 @@ const MainScreen: React.FC = () => {
       />
 
       <div className="mainBottomContent">
-        <Link style={{ textDecoration: 'none' }} to={'/services'}>
+        <Link className="mainBottomContentLink " to={'/services'}>
           <div className="mainBottomContentBtn">
             <img
               className="mainBottomContentImg"
               src={require('../../assets/images/block.png')}
               alt="Services Block"
             />
-            <p>Услуги</p>
+            <p style={{ color: '#000' }}>Услуги</p>
           </div>
         </Link>
-        <div className="line" />
-        <Link style={{ textDecoration: 'none' }} to={'/portfolio'}>
+        {/*<div className="line" />*/}
+        <Link className="mainBottomContentLink mainBottomContentLeftPadding" to={'/portfolio'}>
           <div className="mainBottomContentBtn">
             <img
               className="mainBottomContentImg"
               src={require('../../assets/images/block1.png')}
               alt="Portfolio Block"
             />
-            <p>Портфолио</p>
+            <p style={{ color: '#000' }}>Портфолио</p>
           </div>
         </Link>
-        <div className="line" />
-        <Link style={{ textDecoration: 'none' }} to={''}>
+        {/*<div className="line" />*/}
+        <Link className="mainBottomContentLeftPadding" style={{ textDecoration: 'none' }}  to={''}>
           <div className="mainBottomContentBtn">
             <img
               className="mainBottomContentImg"
               src={require('../../assets/images/block2.png')}
               alt="Contacts Block"
             />
-            <p>Контакты</p>
+            <p style={{ color: '#000' }}>Контакты</p>
           </div>
         </Link>
       </div>

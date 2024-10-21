@@ -10,7 +10,7 @@ const MenuBtn: React.FC = () => {
     <div className="menuBtn">
       <p
         onClick={()=> dispatch(setMenuVisibility(true))}
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: 'pointer', fontWeight: '600' }}
       >
         меню
       </p>
