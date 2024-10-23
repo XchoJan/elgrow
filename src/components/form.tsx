@@ -47,7 +47,7 @@ const FormContainer: React.FC<FormProps> = ({ isVisible, onClickClose }: FormPro
 
   return (
     <div  className={`formModal ${isVisible && 'formModalVisible'}`}>
-      <div className="formLeft">
+      <div className={`formLeft ${isVisible && 'formLeftVisible'}`}>
 
         <div className="form-container">
           <div onClick={onClickClose} className="formCloseIcon">

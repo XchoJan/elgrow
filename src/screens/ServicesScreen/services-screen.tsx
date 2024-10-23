@@ -60,9 +60,10 @@ const ServicesScreen: React.FC = () => {
           <div className="servicesCasesBox">
             <AnimatedCases title={'Технологии'}/>
             <div style={{ marginRight: '80px' }}/>
-            <AnimatedCases title={'Кейсы'}/>
+            <AnimatedCases link={'/portfolio'} title={'Кейсы'}/>
           </div>
         </div>
+
       </div>
     </div>
   );

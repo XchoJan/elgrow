@@ -41,22 +41,25 @@ html, body {
     overflow-x: hidden;
     font-family: "Winston", sans-serif;
 }
-.headerMinHeight{
+
+.headerMinHeight {
     height: 100px;
 }
-.portfolioHeaderWhite{
+
+.portfolioHeaderWhite {
     height: 100px;
     background-color: #fff;
     width: 100%
 }
-.menuLine{
+
+.menuLine {
     width: 1px;
-    height: 100vh;
     background-color: grey;
     position: absolute;
     top: 0;
     left: 40%;
 }
+
 .mainContainer {
     display: flex;
     width: 100%;
@@ -98,7 +101,6 @@ html, body {
 }
 
 
-
 .mainImages {
     width: 100%;
 }
@@ -128,27 +130,32 @@ html, body {
     padding-left: 12px;
     cursor: pointer;
 }
-.contactUsBtnImg{
+
+.contactUsBtnImg {
     width: 78px;
     height: 78px;
     margin-left: 18px
 }
-.contactUsBtnImgReversed{
+
+.contactUsBtnImgReversed {
     width: 60px;
     height: 60px;
     margin-right: 18px
 }
-.contactUsBtnTitle{
+
+.contactUsBtnTitle {
     font-size: clamp(1.125rem, 1.059rem + 0.26vw, 1.375rem);
     font-weight: 400;
     line-height: 27px;
     margin-top: 18px
 }
-.contactUsBtn:hover{
+
+.contactUsBtn:hover {
     width: 310px;
     transition: 0.4s;
 }
-.contactUsBtnReversed:hover{
+
+.contactUsBtnReversed:hover {
     width: 210px;
     transition: 0.4s;
 }
@@ -158,6 +165,7 @@ html, body {
     left: 0;
     top: 50%;
 }
+
 .contactUsBtnContainerReversed {
     display: none;
     position: absolute;
@@ -172,8 +180,8 @@ html, body {
 }
 
 .subtract {
-  display: none;
-  width: auto;
+    display: none;
+    width: auto;
 }
 
 .tabContainer:hover .subtract {
@@ -187,7 +195,8 @@ html, body {
 .tabContainer.active .subtract {
     display: block;
 }
-.tabContainer:hover .rightElemTitle{
+
+.tabContainer:hover .rightElemTitle {
     color: black;
 }
 
@@ -196,12 +205,14 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 44px;
 }
 
 .Form-control:focus {
     box-shadow: none;
     border-color: transparent;
 }
+
 .mainDescriptionBox {
     position: absolute;
     bottom: 80px;
@@ -209,7 +220,7 @@ html, body {
     width: 600px;
 }
 
-.mainDescription{
+.mainDescription {
     font-weight: 500;
     font-size: clamp(1rem, 0.77rem + 0.92vw, 1.875rem);
     line-height: 34px
@@ -268,6 +279,7 @@ html, body {
     width: 45%;
 }
 
+
 .servicesFiltersElem {
     cursor: pointer;
     color: #BDBDBD;
@@ -276,15 +288,17 @@ html, body {
     margin-bottom: 24px;
     width: fit-content;
 }
-.servicesFiltersElem:hover{
+
+.servicesFiltersElem:hover {
     color: #000
 }
+
 .servicesActiveFiltersElem {
     cursor: pointer;
     color: #000
 }
 
-.servicesActiveFiltersDescription{
+.servicesActiveFiltersDescription {
     font-size: clamp(1.75rem, 1.553rem + 0.79vw, 2.5rem);
     font-weight: 400;
     line-height: 50px;
@@ -292,26 +306,31 @@ html, body {
     white-space: pre-line;
 }
 
-.casesBox{
+.servicesDescriptionBox {
+    margin-top: 40px;
+}
+
+.casesBox {
     cursor: pointer;
 }
 
-.casesLine{
+.casesLine {
     width: 100%;
     height: 1px;
     background-color: black;
     margin-top: 4px;
 }
 
-.casesBox:hover .casesLine{
+.casesBox:hover .casesLine {
     animation-name: expand;
     animation-duration: 0.4s;
 }
 
 
-.servicesCasesBox{
+.servicesCasesBox {
     display: flex;
 }
+
 .menuContainer {
     position: absolute;
     height: 100%;
@@ -323,7 +342,8 @@ html, body {
     width: 100%;
     display: none;
 }
-.menuHeader{
+
+.menuHeader {
     display: flex;
     justify-content: space-between;
     padding: 40px 40px 60px;
@@ -342,37 +362,41 @@ html, body {
     z-index: 1;
 }
 
-.elgrowLogoMenu{
+.elgrowLogoMenu {
     width: 280px;
     height: 83px;
     margin-top: 32px;
 }
-.elgrowDescriptionMenu{
+
+.elgrowDescriptionMenu {
     width: 312px;
     font-size: 16px;
     font-weight: 500;
     margin-top: 24px
 }
+
 .ticker-wrapper__first-half {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 165px;
-    transform: translate(100%, 0%);
+    transform: translate(0%, 0%);
     animation: ticker 30s infinite linear forwards;
 }
-.ticker-wrapper{
+
+.ticker-wrapper {
     width: 100%;
     height: 165px;
     margin-bottom: 40px;
 }
+
 .ticker-wrapper img {
     width: 100%;
     height: 165px;
     margin-right: 28px;
 }
 
-.servicesTitles{
+.servicesTitles {
     text-align: center;
     margin-bottom: 40px;
     cursor: pointer;
@@ -380,7 +404,7 @@ html, body {
 }
 
 
-.portfolioHeader{
+.portfolioHeader {
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -388,24 +412,24 @@ html, body {
     height: 100px;
 }
 
-.portfolioImgWrapper{
+.portfolioImgWrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.portfolioElemContainer{
+.portfolioElemContainer {
     position: relative;
     width: 50%;
     height: auto;
 }
 
-.portfolioElemImg{
+.portfolioElemImg {
     width: 100%;
 }
 
-.portfolioElemImgAnim{
+.portfolioElemImgAnim {
     width: 100%;
     height: 100%;
     background-color: #0000004D;
@@ -417,27 +441,29 @@ html, body {
     justify-content: center;
     display: none;
 }
-.portfolioElemContainer:hover .portfolioElemImgAnim{
+
+.portfolioElemContainer:hover .portfolioElemImgAnim {
     display: flex;
 }
 
-.portfolioElemImgAnimText{
+.portfolioElemImgAnimText {
     font-size: 30px;
     color: #fff;
     font-weight: 700;
 
 }
-.imagesContainer{
+
+.imagesContainer {
     display: flex;
     flex-direction: row;
 }
 
-.portfolioTopImg{
+.portfolioTopImg {
     width: 50%;
     height: 30%;
 }
 
-.formModal{
+.formModal {
     transition: left 1s ease;
     width: 100%;
     height: 100vh;
@@ -446,26 +472,36 @@ html, body {
     top: 0;
     z-index: 2;
     display: flex;
+    overflow-y: hidden;
+    background-color: #00000099;
 
 }
-.formModalVisible{
+
+.formModalVisible {
     left: 0
 }
 
-.formCloseIcon{
+.formCloseIcon {
     display: none;
     justify-content: flex-end;
 }
-.formLeft{
+
+.formLeft {
     width: 35%;
-    background-color: #FFFFFF;
     height: 100%;
+    background-color: #FFFFFF;
     padding-top: 60px;
     position: relative;
+    overflow-y: scroll;
+    transition: 2s;
+    left: -200%
 }
-.formRight{
+.formLeftVisible{
+  left: 0;
+}
+
+.formRight {
     width: 65%;
-    background-color: #00000099;
     height: 100%;
 }
 
@@ -514,6 +550,7 @@ html, body {
 .form-submit-btn:hover {
     background-color: #333;
 }
+
 .form-submit-btn:active {
     background-color: #fff;
     color: black;
@@ -555,21 +592,20 @@ html, body {
     color: #555;
 }
 
-.formCloseCircle{
+.formCloseCircle {
     width: 110px;
     height: 110px;
     border-radius: 100px;
     background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
     top: 45%;
     left: 90%;
     position: absolute;
     cursor: pointer
 }
 
-.privacyText{
+.privacyText {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
@@ -577,54 +613,94 @@ html, body {
     color: #0D0D0D;
 }
 
-.formBottomContent{
+.formBottomContent {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.horizontalLine{
+
+.horizontalLine {
     width: 124px;
     height: 1px;
     background-color: #BDBDBD;
     margin-top: 4px;
 }
-.orText{
+
+.orText {
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.formContactsBox{
+.formContactsBox {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.mainBottomContentLink{
+.mainBottomContentLink {
     text-decoration: none;
     border-right: 1px solid grey;
     padding-right: 24px;
 
 }
 
-.mainBottomContentLeftPadding{
+.mainBottomContentLeftPadding {
     padding-left: 24px;
 }
 
-.menuCases{
+.menuCases {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
-    margin-left: 40px
+    margin-left: 40px;
+    margin-bottom: 30px
+}
+
+
+.contactsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 560px;
+    margin: 220px auto 80px auto;
+}
+
+.contactsTitle {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 1.401rem + 0.39vw, 1.875rem);
+    line-height: 37px;
+    color: #0D0D0D
+}
+
+.contactsDescription {
+    color: #707070;
+    font-size: 20px;
+    line-height: 25px;
+    width: 240px;
+}
+
+.contactsCuntactUsBtn {
+    margin: 0 auto;
+    width: fit-content
+}
+
+.mediaContactUs{
+    display: none;
 }
 
 @media (max-width: 1440px) {
-    .formLeft{
+    .formLeft {
         width: 50%;
     }
-    .formRight{
+
+    .formRight {
         width: 50%;
+    }
+
+    .tabContainer {
+        margin-right: 24px;
     }
 
 }
@@ -652,7 +728,7 @@ html, body {
     .mainDescriptionBox {
         position: absolute;
         top: 124px;
-        left: 30%;
+        left: 55%;
         width: 80%;
         font-size: 24px;
     }
@@ -665,12 +741,14 @@ html, body {
         width: 100%;
     }
 
-    .formLeft{
+    .formLeft {
         width: 65%;
     }
-    .formRight{
+
+    .formRight {
         width: 35%;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -680,7 +758,8 @@ html, body {
         border-radius: 80px;
         object-fit: cover;
     }
-    .formCloseIcon{
+
+    .formCloseIcon {
         display: flex;
         width: 100%;
         cursor: pointer;
@@ -689,28 +768,36 @@ html, body {
         right: 30px;
 
     }
-    .formCloseCircle{
+
+    .formCloseCircle {
         display: none;
     }
+
     .elgrowLogo {
-        right: 40px;
+        right: 10px;
         width: 50%;
         height: 30%;
         top: 40%;
     }
 
     .mainDescriptionBox {
-        left: 38%;
+        left: 45%;
         width: 85%;
     }
 
-    .mainDescription{
+    .contactUsBtn:hover {
+        width: 250px;
+        transition: 0.4s;
+    }
+
+
+    .mainDescription {
         font-weight: 500;
         line-height: 30px
     }
 
 
-    .servicesFilters{
+    .servicesFilters {
         flex-direction: row;
         flex-wrap: nowrap;
         width: 100%;
@@ -720,96 +807,145 @@ html, body {
         padding-bottom: 12px;
     }
 
-    .servicesFiltersElem{
+    .servicesFiltersElem {
         margin-right: 24px;
         font-size: 20px;
         line-height: 30px;
     }
-    .servicesBox{
+
+    .servicesBox {
         display: block;
         margin: 0 auto;
         width: 100%;
     }
-    .servicesDescriptionBox{
-        margin-left: 20px;
-        margin-top: 80px;
+
+    .servicesDescriptionBox {
+        margin: 80px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        position: relative;
     }
-    .imagesContainer{
+
+    .servicesCasesBox {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        bottom: -45px;
+        left: 0;
+    }
+
+    .imagesContainer {
         display: flex;
         flex-direction: column;
     }
-    .portfolioTopImg{
+
+    .portfolioTopImg {
         width: 100%;
         height: 420px;
     }
-    .mainBottomContent{
+
+    .mainBottomContent {
+        display: flex;
+        position: absolute;
+        bottom: 24px;
+        justify-content: flex-start;
+        width: 100%;
         overflow-x: auto;
+        margin-left: 24px
     }
-    .formLeft{
+
+    .formLeft {
         width: 100%;
     }
-    .formRight{
+
+    .formRight {
         width: 0%;
     }
-    .portfolioImgWrapper{
+
+    .portfolioImgWrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .portfolioElemContainer{
+    .portfolioElemContainer {
         width: 100%;
     }
+
     .contactUsBtn {
         width: 211px;
         height: 76px
     }
-    .contactUsBtnImg{
+
+    .contactUsBtnImg {
         width: 60px;
         height: 60px
     }
 
-    .elgrowLogoMenu{
+    .elgrowLogoMenu {
         min-width: 220px;
         height: 65px;
         margin-top: 24px;
         margin-left: -30px;
     }
-    .elgrowDescriptionMenu{
+
+    .elgrowDescriptionMenu {
         max-width: 200px;
         font-size: 16px;
         font-weight: 500;
         margin-top: 24px
     }
-    .mainContainer{
+
+    .mainContainer {
         padding-left: 30px;
     }
+
     .menuBtn {
         padding-right: 30px;
     }
+    .contactsContainer{
+        padding-left: 24px
+    }
 }
 
+@media (max-width: 545px){
+    .contactsContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 165px;
+    }
+    .contactsCuntactUsBtn {
+        margin: 0 0 0 16px
+    }
+
+}
 @media (max-width: 400px) {
     .menuBtn {
         padding-right: 20px;
 
     }
-    .contactUsBtnContainer{
+    .contactUsBtnContainerReversed{
+        display: none;
+    }
+
+    .contactUsBtnContainer {
         display: none
     }
-    .contactUsBtnContainerReversed{
-        display: block;
-    }
-    .mainContainer{
+
+    .mainContainer {
         padding-left: 16px;
     }
-    .elgrowLogo{
-        top: 33%;
+
+    .elgrowLogo {
+        top: 35%;
         width: 350px;
         height: 101px;
         left: 16px;
         margin-top: 16px;
     }
+
     .servicesBox {
         display: block;
         margin: 0 auto;
@@ -819,76 +955,103 @@ html, body {
         padding-right: 16px;
     }
 
-    .mainDescriptionBox{
-        left: 14%;
-        width: 100%;
-        font-weight: 500;
-        line-height: 20px;
-        height: fit-content;
+    .mainDescriptionBox {
+        left: 18% !important;
     }
 
-    .servicesFiltersElem{
+    .servicesFiltersElem {
         margin-right: 24px;
         font-size: 20px;
     }
 
-    .servicesDescriptionBox{
+    .servicesDescriptionBox {
         margin-left: 16px;
     }
-    .portfolioTopImg{
+
+    .portfolioTopImg {
         width: 100%;
         height: 315px;
     }
-    .mainBottomContentBtn{
+
+    .mainBottomContentBtn {
         width: 170px;
     }
-    .mainBottomContent{
+
+    .mainBottomContent {
         overflow-x: auto;
-        top: 55%;
+        top: 60%;
         height: fit-content;
-        padding-left: 14px
     }
+
     .mainBottomContentImg {
         width: 170px;
         height: 116px;
     }
-    .contactUsBtnContainer{
+
+    .contactUsBtnContainer {
         top: 80%;
     }
-    .contactUsBtnReversed{
+
+    .contactUsBtnReversed {
         display: flex;
     }
 
-    .elgrowLogoMenu{
-       display: none;
+    .elgrowLogoMenu {
+        display: none;
     }
-    .elgrowDescriptionMenu{
-       display: none;
+
+    .elgrowDescriptionMenu {
+        display: none;
     }
-    .menuLine{
+
+    .menuLine {
         left: 38%;
     }
-    .menuCases{
+
+    .menuCases {
         flex-direction: column;
         align-items: flex-start;
         margin-left: 120px;
         justify-content: flex-end;
         margin-top: 34%;
     }
+
+    .contactsCuntactUsBtn {
+        margin: 0 0 0 16px
+    }
+
+    .contactsDescription {
+        font-size: 18px
+    }
+    .mediaContactUs{
+        display: block;
+        margin-top: 32px;
+        background-color: #E6E6E6;
+        height: 39px;
+        padding: 8px 24px 8px 24px;
+        border-radius: 100px;
+        margin-right: 24px;
+        cursor: pointer;
+    }
 }
 
+
+@media (max-width: 545px) {
+    .mainDescriptionBox{
+        left: 30%
+    }
+}
 @keyframes expand {
-    from {width: 0;}
-    to {width: 100%;}
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
-
 
 @keyframes ticker {
     0% {
-        transform: translate(100%, 0);
-    }
-
-    50% {
         transform: translate(0, 0);
     }
 

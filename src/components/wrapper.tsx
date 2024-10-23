@@ -8,12 +8,12 @@ interface WrapperProps{
 }
 
 const Wrapper: React.FC<WrapperProps> = ({ children }: any) => {
-  const isVisible = useSelector((store: any) => store.example.showMenu);
+  const isVisibleMenu = useSelector((store: any) => store.example.showMenu);
 
   return (
     <div>
       {children}
-      <MenuModal isVisible={isVisible}/>
+      <MenuModal isVisible={isVisibleMenu}/>
     </div>
   );
 };

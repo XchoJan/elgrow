@@ -51,9 +51,12 @@ const MainScreen: React.FC = () => {
           </div>
 
           <div className="rightElem">
-            <div className="rightElemTitleContainer">
-              <Tab title={'контакты'} />
-            </div>
+            <Link style={{ textDecoration: 'none' }} to={'/contacts'}>
+              <div className="rightElemTitleContainer">
+                <Tab title={'контакты'} />
+              </div>
+            </Link>
+
             <img
               style={{ paddingTop: '55%' }}
               className="mainImages"
@@ -62,6 +65,11 @@ const MainScreen: React.FC = () => {
             />
           </div>
         </div>
+
+        <div onClick={() => setIsVisibleForm(true)} className="mediaContactUs">
+          <p>Cвязаться</p>
+        </div>
+
         <MenuBtn />
 
         <div
@@ -71,21 +79,14 @@ const MainScreen: React.FC = () => {
           <ContactUsBtn />
         </div>
 
-        <div
-          onClick={() => setIsVisibleForm(true)}
-          className="contactUsBtnContainerReversed"
-        >
-          <ContactUsBtnReversed />
-        </div>
-
         <div className="mainDescriptionBox">
           <span className="mainDescription">
             Разработка и интеграция IT-решений <br /> Автоматизация бизнеса{' '}
             <br /> Аутстаффинг специалистов
           </span>
         </div>
-        <img className="elgrowLogo" src={ElgrowLogo} alt="Elgrow Logo" />
       </div>
+      <img className="elgrowLogo" src={ElgrowLogo} alt="Elgrow Logo" />
 
       <Form
         onClickClose={() => setIsVisibleForm(false)}
@@ -114,8 +115,8 @@ const MainScreen: React.FC = () => {
             <p style={{ color: '#000' }}>Портфолио</p>
           </div>
         </Link>
-        {/*<div className="line" />*/}
-        <Link className="mainBottomContentLeftPadding" style={{ textDecoration: 'none' }}  to={''}>
+
+        <Link className="mainBottomContentLeftPadding" style={{ textDecoration: 'none' }} to={'/contacts'}>
           <div className="mainBottomContentBtn">
             <img
               className="mainBottomContentImg"

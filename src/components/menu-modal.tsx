@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -16,12 +16,36 @@ interface MenuModalProps {
 }
 const MenuModal:React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
   const dispatch = useDispatch();
+
+  const [documentHeight, setDocumentHeight] = useState(0);
+
+  const updateDocumentHeight = () => {
+    const fullHeight = document.documentElement.scrollHeight; // Высота всей страницы
+    setDocumentHeight(fullHeight);
+  };
+
+  useEffect(() => {
+    updateDocumentHeight();
+
+    // Обновляем высоту при изменении размера окна или содержимого
+    window.addEventListener('resize', updateDocumentHeight);
+    window.addEventListener('scroll', updateDocumentHeight);
+
+    // Очищаем обработчики при размонтировании компонента
+    return () => {
+      window.removeEventListener('resize', updateDocumentHeight);
+      window.removeEventListener('scroll', updateDocumentHeight);
+    };
+  }, []);
+
+
   return (
     <div
       className={`menuContainer ${isVisible && 'menuContainerVisible'}`}
     >
       <div className="menuHeader">
         <img className="headerAppLogo" src={AppLogo} alt="App Logo" />
+
         <p
           onClick={() => dispatch(setMenuVisibility(false))}
           style={{ cursor: 'pointer', fontWeight: '600' }}
@@ -73,7 +97,9 @@ const MenuModal:React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
         <Link onClick={()=> dispatch(setMenuVisibility(false))} style={{ textDecoration: 'none', color: 'black' }} to={'/portfolio'}>
           <p className="servicesTitles">портфолио</p>
         </Link>
-        <p className="servicesTitles">контакты</p>
+        <Link onClick={()=> dispatch(setMenuVisibility(false))} style={{ textDecoration: 'none', color: 'black' }} to={'/contacts'}>
+          <p className="servicesTitles">контакты</p>
+        </Link>
       </div>
 
       <div style={{ display: 'flex' }}>
@@ -95,7 +121,7 @@ const MenuModal:React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
       </div>
 
 
-      <div className="menuLine"/>
+      <div  style={{ height: `${documentHeight}px` }} className="menuLine"/>
     </div>
   );
 };
