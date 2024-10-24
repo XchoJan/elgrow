@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.3d3ba29e.css",
-    "main.js": "/elgrow/static/js/main.305199b9.js",
+    "main.css": "/elgrow/static/css/main.ea9d3e7b.css",
+    "main.js": "/elgrow/static/js/main.94b7e8b3.js",
     "static/js/453.d9054efb.chunk.js": "/elgrow/static/js/453.d9054efb.chunk.js",
     "static/media/portfolio10.png": "/elgrow/static/media/portfolio10.104c467ff358e3684b03.png",
     "static/media/portfolio4.png": "/elgrow/static/media/portfolio4.839e9b26e43fa5419cf9.png",
+    "static/media/utg-first.png": "/elgrow/static/media/utg-first.822c6b975782ff5b9c4a.png",
     "static/media/portfolio2.png": "/elgrow/static/media/portfolio2.a9a763b3ac38967fe3b9.png",
     "static/media/portfolio7.png": "/elgrow/static/media/portfolio7.8e63dbe4e8993f784d39.png",
     "static/media/portfolio8.png": "/elgrow/static/media/portfolio8.8daac1d72e861555be04.png",
@@ -12,13 +13,20 @@
     "static/media/portfolio11.png": "/elgrow/static/media/portfolio11.a9063b1c991e880bde21.png",
     "static/media/portfolio3.png": "/elgrow/static/media/portfolio3.cb8e2f7bbfad49a1952f.png",
     "static/media/portfolio5.png": "/elgrow/static/media/portfolio5.aefab25c4c46615da24f.png",
+    "static/media/image51.png": "/elgrow/static/media/image51.a442df257d3ac0b02ca1.png",
+    "static/media/leave.png": "/elgrow/static/media/leave.eaf0f83237bd5e16459b.png",
     "static/media/Winston-Regular.ttf": "/elgrow/static/media/Winston-Regular.0d06021039c3cbb4ef4e.ttf",
     "static/media/Winston-SemiBold.ttf": "/elgrow/static/media/Winston-SemiBold.d4707eec5f8b412922cb.ttf",
     "static/media/Winston-Medium.ttf": "/elgrow/static/media/Winston-Medium.ff8b87cafe1a3fff4af6.ttf",
     "static/media/main1.png": "/elgrow/static/media/main1.0116424fcd768c773938.png",
     "static/media/main2.png": "/elgrow/static/media/main2.1d8611c42f07eee63f6b.png",
     "static/media/main3.png": "/elgrow/static/media/main3.37ede51d9e75ca1e7b51.png",
+    "static/media/image42.png": "/elgrow/static/media/image42.c78741936c5ed73ee34a.png",
+    "static/media/education-process.png": "/elgrow/static/media/education-process.dca4133f99f9520cd779.png",
     "static/media/portfolio1.png": "/elgrow/static/media/portfolio1.a132a01537b42b50331f.png",
+    "static/media/image43.png": "/elgrow/static/media/image43.00633d46c2df402f809b.png",
+    "static/media/utg-authorization.png": "/elgrow/static/media/utg-authorization.1045fe5b09b9fbeeed37.png",
+    "static/media/utg-analytics.png": "/elgrow/static/media/utg-analytics.10d4523b0617de6a5872.png",
     "static/media/block.png": "/elgrow/static/media/block.c2cece5b06a9f406b55e.png",
     "static/media/block1.png": "/elgrow/static/media/block1.c85b595c3b35c0f58309.png",
     "static/media/block2.png": "/elgrow/static/media/block2.eae51b4924c0dececd27.png",
@@ -31,12 +39,12 @@
     "static/media/Subtract.svg": "/elgrow/static/media/Subtract.963a75351a9330259b32b7ac5b20e83d.svg",
     "static/media/caseArrow.svg": "/elgrow/static/media/caseArrow.fc42530ea3ba79c8cad1499c05c4bb5c.svg",
     "static/media/close.svg": "/elgrow/static/media/close.137c480d1a3697fe8a51b23f9ef2f787.svg",
-    "main.3d3ba29e.css.map": "/elgrow/static/css/main.3d3ba29e.css.map",
-    "main.305199b9.js.map": "/elgrow/static/js/main.305199b9.js.map",
+    "main.ea9d3e7b.css.map": "/elgrow/static/css/main.ea9d3e7b.css.map",
+    "main.94b7e8b3.js.map": "/elgrow/static/js/main.94b7e8b3.js.map",
     "453.d9054efb.chunk.js.map": "/elgrow/static/js/453.d9054efb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d3ba29e.css",
-    "static/js/main.305199b9.js"
+    "static/css/main.ea9d3e7b.css",
+    "static/js/main.94b7e8b3.js"
   ]
 }
