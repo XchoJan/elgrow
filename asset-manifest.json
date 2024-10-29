@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.9420cc5b.css",
+    "main.css": "/elgrow/static/css/main.037a9cd4.css",
     "main.js": "/elgrow/static/js/main.ce9644cc.js",
     "static/js/453.d9054efb.chunk.js": "/elgrow/static/js/453.d9054efb.chunk.js",
     "static/media/portfolio10.png": "/elgrow/static/media/portfolio10.104c467ff358e3684b03.png",
@@ -40,12 +40,12 @@
     "static/media/Subtract.svg": "/elgrow/static/media/Subtract.963a75351a9330259b32b7ac5b20e83d.svg",
     "static/media/caseArrow.svg": "/elgrow/static/media/caseArrow.fc42530ea3ba79c8cad1499c05c4bb5c.svg",
     "static/media/close.svg": "/elgrow/static/media/close.137c480d1a3697fe8a51b23f9ef2f787.svg",
-    "main.9420cc5b.css.map": "/elgrow/static/css/main.9420cc5b.css.map",
+    "main.037a9cd4.css.map": "/elgrow/static/css/main.037a9cd4.css.map",
     "main.ce9644cc.js.map": "/elgrow/static/js/main.ce9644cc.js.map",
     "453.d9054efb.chunk.js.map": "/elgrow/static/js/453.d9054efb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9420cc5b.css",
+    "static/css/main.037a9cd4.css",
     "static/js/main.ce9644cc.js"
   ]
 }
