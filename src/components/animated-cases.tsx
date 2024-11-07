@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import CaseArrow from '../assets/svg/caseArrow.svg';
 interface AnimatedCasesProps {
   title?: string;
-  link?: any
+  link?: any;
+  onClick?: ()=> void
 }
-const AnimatedCases: React.FC<AnimatedCasesProps>  = ({ title, link }) => (
-  <div className="casesBox">
+const AnimatedCases: React.FC<AnimatedCasesProps>  = ({ title, link, onClick }) => (
+  <div onClick={onClick} className="casesBox">
     <Link style={{ textDecoration: 'none' }} to={link}>
       <span style={{ color: '#000' }}>{title} <img
         src={CaseArrow}

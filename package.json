@@ -11,7 +11,9 @@
     "@types/node": "^16.18.113",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
@@ -25,7 +27,7 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://XchoJan.github.io/elgrow",
+  "homepage": "https://new.elgrow.ru",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

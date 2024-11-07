@@ -5,72 +5,111 @@ import AppLogo from '../../assets/svg/logo.svg';
 import ContactUsBtn from '../../components/contact-us-btn';
 import Tab from '../../components/tab';
 import ElgrowLogo from '../../assets/svg/elgrow.svg';
-import MenuBtn from '../../components/menu-btn';
 import Form from '../../components/form';
 import ContactUsBtnReversed from '../../components/contact-us-btn-reversed';
+import MenuItems from '../../components/menu-items';
+import FloatingInput from '../../components/floating-input';
 
 const MainScreen: React.FC = () => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
 
   return (
-    <div style={{ width: '100%', height: '100%' }}>
+    <div style={{ width: '100%', height: '100%', overflowY: 'hidden' }}>
       <div className="mainContainer">
         <div className="mainLogoBox">
-          <img className="headerAppLogo" src={AppLogo} alt="" />
+          <img className="headerAppLogo mainScreenAppLogo" src={AppLogo} alt="" />
         </div>
 
         <div className="mainRightContent">
-          <div className="rightElem">
-            <Link style={{ textDecoration: 'none' }} to={'/services'}>
-              <div className="rightElemTitleContainer">
+          <div
+            style={{
+              borderColor: isHovered1 ? '#CFCFCF' : '#fff'
+            }}
+            className="rightElem ">
+            <Link
+              style={{ textDecoration: 'none' }}
+              to={'/services'}
+              onMouseEnter={() => setIsHovered1(true)}
+              onMouseLeave={() => setIsHovered1(false)}
+            >
+              <div className="rightElemTitleContainer main-link-1">
                 <Tab title={'услуги'} />
               </div>
             </Link>
 
             <img
-              style={{ paddingTop: '10%' }}
-              className="mainImages"
+              style={{
+                paddingTop: '44%',
+                marginTop: isHovered1 ? '24px' : '0',
+                opacity: isHovered1 ? 1 : 0,
+              }}
+              className="mainImages main-link-img-1"
               src={require('../../assets/images/main1.png')}
               alt="Main Service"
             />
           </div>
 
-          <div className="rightElem">
-            <Link style={{ textDecoration: 'none' }} to={'/portfolio'}>
-              <div className="rightElemTitleContainer">
-                <Tab title={'портфолио'} />
+          <div
+            style={{
+              borderColor: isHovered2 ? '#CFCFCF' : '#fff'
+            }}
+            className="rightElem">
+            <Link
+              style={{ textDecoration: 'none' }}
+              to={'/portfolio'}
+              onMouseEnter={() => setIsHovered2(true)}
+              onMouseLeave={() => setIsHovered2(false)}
+            >
+              <div className="rightElemTitleContainer main-link-2">
+                <Tab title={'кейсы'} />
               </div>
             </Link>
 
             <img
-              style={{ paddingTop: '94%' }}
-              className="mainImages"
+              style={{
+                paddingTop: '100%',
+                marginTop: isHovered2 ? '24px' : '0',
+                opacity: isHovered2 ? 1 : 0,
+              }}
+              className="mainImages main-link-img-2"
               src={require('../../assets/images/main2.png')}
               alt="Main Portfolio"
             />
           </div>
 
-          <div className="rightElem">
-            <Link style={{ textDecoration: 'none' }} to={'/contacts'}>
-              <div className="rightElemTitleContainer">
+          <div
+            style={{
+              borderColor: isHovered3 ? '#CFCFCF' : '#fff'
+            }}
+            className="rightElem ">
+            <Link
+              style={{ textDecoration: 'none' }}
+              to={'/contacts'}
+              onMouseEnter={() => setIsHovered3(true)}
+              onMouseLeave={() => setIsHovered3(false)}
+            >
+              <div className="rightElemTitleContainer main-link-3">
                 <Tab title={'контакты'} />
               </div>
             </Link>
 
             <img
-              style={{ paddingTop: '55%' }}
-              className="mainImages"
+              style={{
+                paddingTop: '85%',
+                marginTop: isHovered3 ? '24px' : '0',
+                opacity: isHovered3 ? 1 : 0,
+              }}
+              className="mainImages main-link-img-3"
               src={require('../../assets/images/main3.png')}
               alt="Main Contacts"
             />
           </div>
         </div>
 
-        <div onClick={() => setIsVisibleForm(true)} className="mediaContactUs">
-          <p>Cвязаться</p>
-        </div>
-
-        <MenuBtn />
+        <MenuItems/>
 
         <div
           onClick={() => setIsVisibleForm(true)}
@@ -79,13 +118,22 @@ const MainScreen: React.FC = () => {
           <ContactUsBtn />
         </div>
 
+        <div
+          onClick={() => setIsVisibleForm(true)}
+          className="contactUsBtnContainerReversed"
+        >
+          <ContactUsBtnReversed/>
+        </div>
+
+
         <div className="mainDescriptionBox">
-          <span className="mainDescription">
+          <p className="mainDescription">
             Разработка и интеграция IT-решений <br /> Автоматизация бизнеса{' '}
             <br /> Аутстаффинг специалистов
-          </span>
+          </p>
         </div>
       </div>
+
       <img className="elgrowLogo" src={ElgrowLogo} alt="Elgrow Logo" />
 
       <Form
@@ -93,8 +141,8 @@ const MainScreen: React.FC = () => {
         isVisible={isVisibleForm}
       />
 
-      <div className="mainBottomContent">
-        <Link className="mainBottomContentLink " to={'/services'}>
+      <div  className="mainBottomContent">
+        <Link className="mainBottomContentLink" to={'/services'}>
           <div className="mainBottomContentBtn">
             <img
               className="mainBottomContentImg"
@@ -105,14 +153,14 @@ const MainScreen: React.FC = () => {
           </div>
         </Link>
         {/*<div className="line" />*/}
-        <Link className="mainBottomContentLink mainBottomContentLeftPadding" to={'/portfolio'}>
+        <Link  className="mainBottomContentLink mainBottomContentLeftPadding" to={'/portfolio'}>
           <div className="mainBottomContentBtn">
             <img
               className="mainBottomContentImg"
               src={require('../../assets/images/block1.png')}
               alt="Portfolio Block"
             />
-            <p style={{ color: '#000' }}>Портфолио</p>
+            <p style={{ color: '#000' }}>кейсы</p>
           </div>
         </Link>
 
