@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.12006521.css",
-    "main.js": "/elgrow/static/js/main.a215b063.js",
+    "main.css": "/elgrow/static/css/main.47962b81.css",
+    "main.js": "/elgrow/static/js/main.be54d775.js",
     "static/js/453.87808007.chunk.js": "/elgrow/static/js/453.87808007.chunk.js",
     "static/media/utg-first.png": "/elgrow/static/media/utg-first.822c6b975782ff5b9c4a.png",
     "static/media/portfolio2.png": "/elgrow/static/media/portfolio2.a9a763b3ac38967fe3b9.png",
@@ -30,7 +30,7 @@
     "static/media/education-process.png": "/elgrow/static/media/education-process.dca4133f99f9520cd779.png",
     "static/media/vtbImage.png": "/elgrow/static/media/vtbImage.a8816b1cedbe44995748.png",
     "static/media/geosys3.png": "/elgrow/static/media/geosys3.b1ea56e01c02c2ea1fa0.png",
-    "static/media/portfolio1.png": "/elgrow/static/media/portfolio1.418077a33f5181ba21fb.png",
+    "static/media/portfolio1.png": "/elgrow/static/media/portfolio1.e3664a33d8198fe852a1.png",
     "static/media/image43.png": "/elgrow/static/media/image43.00633d46c2df402f809b.png",
     "static/media/utg-avia3.png": "/elgrow/static/media/utg-avia3.a80bd23b5f6a1388e75f.png",
     "static/media/utg-authorization.png": "/elgrow/static/media/utg-authorization.1045fe5b09b9fbeeed37.png",
@@ -43,7 +43,7 @@
     "static/media/block2.png": "/elgrow/static/media/block2.eae51b4924c0dececd27.png",
     "static/media/RB-Solution2.png": "/elgrow/static/media/RB-Solution2.6681e4d39974cf4cc00b.png",
     "static/media/RB-Solution3.png": "/elgrow/static/media/RB-Solution3.ee4198f46d86150f42c1.png",
-    "static/media/portfolio6.jpg": "/elgrow/static/media/portfolio6.0be0df4dd30c318c07e9.jpg",
+    "static/media/portfolio6.png": "/elgrow/static/media/portfolio6.2e23881357b488dc3365.png",
     "static/media/mongoDb.svg": "/elgrow/static/media/mongoDb.64ade5846fcadc447a8eea945c22fc90.svg",
     "static/media/nestJs.svg": "/elgrow/static/media/nestJs.de7f202e4c7c8b9dc6bad338ed4f6652.svg",
     "static/media/amo.svg": "/elgrow/static/media/amo.78c93a47c4f958d044201da4621240dd.svg",
@@ -74,12 +74,12 @@
     "static/media/caseArrow.svg": "/elgrow/static/media/caseArrow.fc42530ea3ba79c8cad1499c05c4bb5c.svg",
     "static/media/vueJs.svg": "/elgrow/static/media/vueJs.09ae232f4e3190a4db7ddfb0e36c46cc.svg",
     "static/media/close.svg": "/elgrow/static/media/close.137c480d1a3697fe8a51b23f9ef2f787.svg",
-    "main.12006521.css.map": "/elgrow/static/css/main.12006521.css.map",
-    "main.a215b063.js.map": "/elgrow/static/js/main.a215b063.js.map",
+    "main.47962b81.css.map": "/elgrow/static/css/main.47962b81.css.map",
+    "main.be54d775.js.map": "/elgrow/static/js/main.be54d775.js.map",
     "453.87808007.chunk.js.map": "/elgrow/static/js/453.87808007.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12006521.css",
-    "static/js/main.a215b063.js"
+    "static/css/main.47962b81.css",
+    "static/js/main.be54d775.js"
   ]
 }
