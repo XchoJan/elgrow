@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.669efb3f.css",
+    "main.css": "/elgrow/static/css/main.fc23710a.css",
     "main.js": "/elgrow/static/js/main.406a9026.js",
     "static/js/453.87808007.chunk.js": "/elgrow/static/js/453.87808007.chunk.js",
     "static/media/utg-first.png": "/elgrow/static/media/utg-first.822c6b975782ff5b9c4a.png",
@@ -74,12 +74,12 @@
     "static/media/caseArrow.svg": "/elgrow/static/media/caseArrow.fc42530ea3ba79c8cad1499c05c4bb5c.svg",
     "static/media/vueJs.svg": "/elgrow/static/media/vueJs.09ae232f4e3190a4db7ddfb0e36c46cc.svg",
     "static/media/close.svg": "/elgrow/static/media/close.137c480d1a3697fe8a51b23f9ef2f787.svg",
-    "main.669efb3f.css.map": "/elgrow/static/css/main.669efb3f.css.map",
+    "main.fc23710a.css.map": "/elgrow/static/css/main.fc23710a.css.map",
     "main.406a9026.js.map": "/elgrow/static/js/main.406a9026.js.map",
     "453.87808007.chunk.js.map": "/elgrow/static/js/453.87808007.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.669efb3f.css",
+    "static/css/main.fc23710a.css",
     "static/js/main.406a9026.js"
   ]
 }
