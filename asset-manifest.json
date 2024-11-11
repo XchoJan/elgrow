@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.8e138346.css",
-    "main.js": "/elgrow/static/js/main.98dca57e.js",
+    "main.css": "/elgrow/static/css/main.669efb3f.css",
+    "main.js": "/elgrow/static/js/main.669fd72b.js",
     "static/js/453.87808007.chunk.js": "/elgrow/static/js/453.87808007.chunk.js",
     "static/media/utg-first.png": "/elgrow/static/media/utg-first.822c6b975782ff5b9c4a.png",
     "static/media/portfolio2.png": "/elgrow/static/media/portfolio2.a9a763b3ac38967fe3b9.png",
@@ -14,6 +14,7 @@
     "static/media/g-luper.png": "/elgrow/static/media/g-luper.77260e75e1b6ef79977c.png",
     "static/media/InterTight-Light.ttf": "/elgrow/static/media/InterTight-Light.8ab73e9fb9bb7259bed2.ttf",
     "static/media/InterTight-Regular.ttf": "/elgrow/static/media/InterTight-Regular.c76da3aba8c5fbc7154f.ttf",
+    "static/media/vtbNew.png": "/elgrow/static/media/vtbNew.8ebfcf568f5bb541f7e0.png",
     "static/media/geosys2.png": "/elgrow/static/media/geosys2.4b896e369d5bc5bcbf1a.png",
     "static/media/leave.png": "/elgrow/static/media/leave.eaf0f83237bd5e16459b.png",
     "static/media/Winston-Regular.ttf": "/elgrow/static/media/Winston-Regular.0d06021039c3cbb4ef4e.ttf",
@@ -28,7 +29,6 @@
     "static/media/main3.png": "/elgrow/static/media/main3.37ede51d9e75ca1e7b51.png",
     "static/media/image42.png": "/elgrow/static/media/image42.c78741936c5ed73ee34a.png",
     "static/media/education-process.png": "/elgrow/static/media/education-process.dca4133f99f9520cd779.png",
-    "static/media/vtbImage.png": "/elgrow/static/media/vtbImage.a8816b1cedbe44995748.png",
     "static/media/geosys3.png": "/elgrow/static/media/geosys3.b1ea56e01c02c2ea1fa0.png",
     "static/media/portfolio1.png": "/elgrow/static/media/portfolio1.e3664a33d8198fe852a1.png",
     "static/media/image43.png": "/elgrow/static/media/image43.00633d46c2df402f809b.png",
@@ -74,12 +74,12 @@
     "static/media/caseArrow.svg": "/elgrow/static/media/caseArrow.fc42530ea3ba79c8cad1499c05c4bb5c.svg",
     "static/media/vueJs.svg": "/elgrow/static/media/vueJs.09ae232f4e3190a4db7ddfb0e36c46cc.svg",
     "static/media/close.svg": "/elgrow/static/media/close.137c480d1a3697fe8a51b23f9ef2f787.svg",
-    "main.8e138346.css.map": "/elgrow/static/css/main.8e138346.css.map",
-    "main.98dca57e.js.map": "/elgrow/static/js/main.98dca57e.js.map",
+    "main.669efb3f.css.map": "/elgrow/static/css/main.669efb3f.css.map",
+    "main.669fd72b.js.map": "/elgrow/static/js/main.669fd72b.js.map",
     "453.87808007.chunk.js.map": "/elgrow/static/js/453.87808007.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e138346.css",
-    "static/js/main.98dca57e.js"
+    "static/css/main.669efb3f.css",
+    "static/js/main.669fd72b.js"
   ]
 }
