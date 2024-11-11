@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/elgrow/static/css/main.669efb3f.css",
-    "main.js": "/elgrow/static/js/main.669fd72b.js",
+    "main.js": "/elgrow/static/js/main.406a9026.js",
     "static/js/453.87808007.chunk.js": "/elgrow/static/js/453.87808007.chunk.js",
     "static/media/utg-first.png": "/elgrow/static/media/utg-first.822c6b975782ff5b9c4a.png",
     "static/media/portfolio2.png": "/elgrow/static/media/portfolio2.a9a763b3ac38967fe3b9.png",
     "static/media/geosys.png": "/elgrow/static/media/geosys.291a6f95536b685e2936.png",
+    "static/media/cowberryNew.png": "/elgrow/static/media/cowberryNew.b524e9505819f1fc68db.png",
     "static/media/portfolio3.png": "/elgrow/static/media/portfolio3.cb8e2f7bbfad49a1952f.png",
     "static/media/postGis.svg": "/elgrow/static/media/postGis.8b6351e1cd61d9f0faac4dbb4e5da453.svg",
     "static/media/image51.png": "/elgrow/static/media/image51.a442df257d3ac0b02ca1.png",
@@ -18,7 +19,6 @@
     "static/media/geosys2.png": "/elgrow/static/media/geosys2.4b896e369d5bc5bcbf1a.png",
     "static/media/leave.png": "/elgrow/static/media/leave.eaf0f83237bd5e16459b.png",
     "static/media/Winston-Regular.ttf": "/elgrow/static/media/Winston-Regular.0d06021039c3cbb4ef4e.ttf",
-    "static/media/cowberryImg.png": "/elgrow/static/media/cowberryImg.14dd40fc0b13a7c11326.png",
     "static/media/Winston-SemiBold.ttf": "/elgrow/static/media/Winston-SemiBold.d4707eec5f8b412922cb.ttf",
     "static/media/Winston-Medium.ttf": "/elgrow/static/media/Winston-Medium.ff8b87cafe1a3fff4af6.ttf",
     "static/media/utg-avia2.png": "/elgrow/static/media/utg-avia2.5df35db1f2a7f7f7c73a.png",
@@ -75,11 +75,11 @@
     "static/media/vueJs.svg": "/elgrow/static/media/vueJs.09ae232f4e3190a4db7ddfb0e36c46cc.svg",
     "static/media/close.svg": "/elgrow/static/media/close.137c480d1a3697fe8a51b23f9ef2f787.svg",
     "main.669efb3f.css.map": "/elgrow/static/css/main.669efb3f.css.map",
-    "main.669fd72b.js.map": "/elgrow/static/js/main.669fd72b.js.map",
+    "main.406a9026.js.map": "/elgrow/static/js/main.406a9026.js.map",
     "453.87808007.chunk.js.map": "/elgrow/static/js/453.87808007.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.669efb3f.css",
-    "static/js/main.669fd72b.js"
+    "static/js/main.406a9026.js"
   ]
 }
