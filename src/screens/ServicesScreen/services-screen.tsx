@@ -115,7 +115,7 @@ const ServicesScreen: React.FC = () => {
   });
 
   return (
-    <div>
+    <div style={{ overflowY: 'auto', height: '100vh', overflowX: 'hidden', scrollbarWidth: 'none' }}>
       <div className="portfolioHeader">
         <Header  onPressContactUs={()=> setIsVisibleForm(true)} minHeight={true} />
       </div>
@@ -139,7 +139,7 @@ const ServicesScreen: React.FC = () => {
         </div>
 
         <div className="servicesDescriptionBox">
-          <p className="servicesActiveFiltersDescription">
+          <p className="servicesActiveFiltersDescription t1">
             {activeFilter.description}
           </p>
 

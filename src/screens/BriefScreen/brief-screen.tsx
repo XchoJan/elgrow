@@ -138,34 +138,35 @@ const BriefScreen: React.FC = () => {
         />
       </div>
       <div className="utg-container">
-        <h2 className="brif-title">Бриф</h2>
+        <h2 className="brif-title H1">Бриф</h2>
 
-        <p className="H28R">Обработка запроса</p>
+        <p className="H2">Обработка запроса</p>
 
-        <span className="L18L">
+        <span className="t3">
           Оперативно pазберемся в проблеме и сориентируем по бюджетам и срокам,
           ее срочность. Расскажем о вилках по типам работ. Если не вписываемся в
           бюджет или сроки, сразу это подсветим
         </span>
 
-        <div style={{ marginLeft: '-10px' }}>
+        <div style={{ marginLeft: '-10px', marginTop: '40px' }}>
           <FloatingInput
             type="text"
             value={companyName}
             onChange={e => setCompanyName(e.target.value)}
-            label="Как называется ваша компания?"
+            placeholder="Как называется ваша компания?"
+
           />
           <FloatingInput
             type="text"
             value={taskDescription}
             onChange={e => setTaskDescription(e.target.value)}
-            label="Расскажите кратко о задаче"
+            placeholder="Расскажите кратко о задаче"
           />
           <FloatingInput
             type="text"
             value={projectType}
             onChange={e => setProjectType(e.target.value)}
-            label="Постоянные ли это работы или единичный проект?"
+            placeholder="Постоянные ли это работы или единичный проект?"
           />
         </div>
 
@@ -198,37 +199,37 @@ const BriefScreen: React.FC = () => {
             type="text"
             value={budgetLimit}
             onChange={e => setBudgetLimit(e.target.value)}
-            label="Каковы ограничения по бюджету?"
+            placeholder="Каковы ограничения по бюджету?"
           />
           <FloatingInput
             type="text"
             value={projectParticipants}
             onChange={e => setProjectParticipants(e.target.value)}
-            label="Кто будет участвовать в проекте на вашей стороне? Кто в этом проекте является ключевым лицом, принимающим решение?"
+            placeholder="Кто будет участвовать в проекте на вашей стороне? Кто в этом проекте является ключевым лицом, принимающим решение?"
           />
           <FloatingInput
             type="text"
             value={departments}
             onChange={e => setDepartments(e.target.value)}
-            label="Есть ли в компании ИТ-подразделение? Маркетинг-подразделение? Дизайн-подразделение?"
+            placeholder="Есть ли в компании ИТ-подразделение? Маркетинг-подразделение? Дизайн-подразделение?"
           />
           <FloatingInput
             type="text"
             value={documentation}
             onChange={e => setDocumentation(e.target.value)}
-            label="Существует ли какая-то значимая документация (персоны, user flow или другие), которую нам следует изучить перед звонком?"
+            placeholder="Существует ли какая-то значимая документация (персоны, user flow или другие), которую нам следует изучить перед звонком?"
           />
           <FloatingInput
             type="text"
             value={ndaRequired}
             onChange={e => setNdaRequired(e.target.value)}
-            label="Есть ли NDA, который нужно подписать до созвона?"
+            placeholder="Есть ли NDA, который нужно подписать до созвона?"
           />
           <FloatingInput
             type="text"
             value={aboutElgrow}
             onChange={e => setAboutElgrow(e.target.value)}
-            label="Расскажите кратко, что вы знаете об Elgrow и как нас нашли?"
+            placeholder="Расскажите кратко, что вы знаете об Elgrow и как нас нашли?"
           />
         </div>
 
@@ -239,54 +240,54 @@ const BriefScreen: React.FC = () => {
         </span>
 
 
-        <div style={{ marginLeft: '-10px', marginBottom: '40px' }}>
+        <div style={{ marginLeft: '-10px', marginBottom: '40px', marginTop: '40px' }}>
           <FloatingInput
             type="text"
             value={companyWorkStyle}
             onChange={e => setCompanyWorkStyle(e.target.value)}
-            label="Как вы работаете? На чем зарабатываете?"
+            placeholder="Как вы работаете? На чем зарабатываете?"
           />
           <FloatingInput
             type="text"
             value={productStructure}
             onChange={e => setProductStructure(e.target.value)}
-            label="Как устроен ваш продукт? Благодаря чему он развивается?"
+            placeholder="Как устроен ваш продукт? Благодаря чему он развивается?"
           />
           <FloatingInput
             type="text"
             value={currentObjective}
             onChange={e => setCurrentObjective(e.target.value)}
-            label="Какая ближайшая задача сейчас стоит перед продуктом?"
+            placeholder="Какая ближайшая задача сейчас стоит перед продуктом?"
           />
           <FloatingInput
             type="text"
             value={needForApp}
             onChange={e => setNeedForApp(e.target.value)}
-            label="Откуда появилась потребность в сайте / приложении / внутренней системе / другом…"
+            placeholder="Откуда появилась потребность в сайте / приложении / внутренней системе / другом…"
           />
           <FloatingInput
             type="text"
             value={businessGoal}
             onChange={e => setBusinessGoal(e.target.value)}
-            label="Какую цель для бизнеса преследуем? Например: привлечение клиентов, регистрации, удержание, прибыль, рекомендации и так далее"
+            placeholder="Какую цель для бизнеса преследуем? Например: привлечение клиентов, регистрации, удержание, прибыль, рекомендации и так далее"
           />
           <FloatingInput
             type="text"
             value={keyMetrics}
             onChange={e => setKeyMetrics(e.target.value)}
-            label="Какие ключевые метрики (KPI)?"
+            placeholder="Какие ключевые метрики (KPI)?"
           />
           <FloatingInput
             type="text"
             value={limitations}
             onChange={e => setLimitations(e.target.value)}
-            label="Есть ли какие-то ограничения (технологические, связанные с бизнесом и т.п.)?"
+            placeholder="Есть ли какие-то ограничения (технологические, связанные с бизнесом и т.п.)?"
           />
           <FloatingInput
             type="text"
             value={referenceProducts}
             onChange={e => setReferenceProducts(e.target.value)}
-            label="Есть ли какие-то продукты, на которые можно ориентироваться? (у конкурентов, из других сфер или другие ваши продукты)"
+            placeholder="Есть ли какие-то продукты, на которые можно ориентироваться? (у конкурентов, из других сфер или другие ваши продукты)"
           />
 
         </div>
@@ -298,48 +299,48 @@ const BriefScreen: React.FC = () => {
           Быстро анализируем текущие документы и исследования, выдаем первичное коммерческое предложение
         </span>
 
-        <div style={{ marginLeft: '-10px', marginBottom: '60px' }}>
+        <div style={{ marginLeft: '-10px', marginBottom: '60px', marginTop: '40px' }}>
           <FloatingInput
             type="text"
             value={projectGoals}
             onChange={e => setProjectGoals(e.target.value)}
-            label="Каких ещё целей вы должны достичь в ходе этого проекта?"
+            placeholder="Каких ещё целей вы должны достичь в ходе этого проекта?"
           />
           <FloatingInput
             type="text"
             value={previousAttempts}
             onChange={e => setPreviousAttempts(e.target.value)}
-            label="Пытались ли раньше закрыть эти задачи? Как? Из того, что вы уже пробовали,что сработало, а что нет?"
+            placeholder="Пытались ли раньше закрыть эти задачи? Как? Из того, что вы уже пробовали,что сработало, а что нет?"
           />
           <FloatingInput
             type="text"
             value={productPrinciple}
             onChange={e => setProductPrinciple(e.target.value)}
-            label="Каков принцип работы продукта? Как он устроен? Из каких частей состоит?"
+            placeholder="Каков принцип работы продукта? Как он устроен? Из каких частей состоит?"
           />
           <FloatingInput
             type="text"
             value={userAssumptions}
             onChange={e => setUserAssumptions(e.target.value)}
-            label="Каковы ваши предположения о пользователях? Что вы точно знаете о пользователях?"
+            placeholder="Каковы ваши предположения о пользователях? Что вы точно знаете о пользователях?"
           />
           <FloatingInput
             type="text"
             value={competitors}
             onChange={e => setCompetitors(e.target.value)}
-            label="Кто ваши конкуренты? Чем вы от них отличаетесь? Какие у вас преимущества и недостатки?"
+            placeholder="Кто ваши конкуренты? Чем вы от них отличаетесь? Какие у вас преимущества и недостатки?"
           />
           <FloatingInput
             type="text"
             value={userAlternatives}
             onChange={e => setUserAlternatives(e.target.value)}
-            label="Какие у пользователя есть альтернативы в решении этой проблемы, помимо конкурентов?"
+            placeholder="Какие у пользователя есть альтернативы в решении этой проблемы, помимо конкурентов?"
           />
           <FloatingInput
             type="text"
             value={additionalInfo}
             onChange={e => setAdditionalInfo(e.target.value)}
-            label="Есть ли ещё что-то важное, о чем мы не спросили?"
+            placeholder="Есть ли ещё что-то важное, о чем мы не спросили?"
           />
         </div>
 

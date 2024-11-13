@@ -46,22 +46,22 @@ const CowberryDetailScreen: React.FC = () => {
       </div>
 
       <div className="utg-container">
-        <h2 className="utg-title">Брусника</h2>
+        <h2 className="H1">Брусника</h2>
         <div className="utg-case-info-box">
           <CaseTitleDescription title={'Аутстаффинг'} description={'Тип работ'}/>
-          <div style={{ width: '100px' }}/>
+          <div style={{ width: '40px' }}/>
           <CaseTitleDescription title={'2024'} description={'Год'}/>
         </div>
 
         <div>
-          <img className="utg-img" src={require('../../assets/images/cowberryImg.png')}/>
+          <img className="utg-img" src={require('../../assets/images/cowberryNew.png')}/>
 
-          <p className="H20B">
+          <p className="H2">
             Аутстаффинг разработчиков
           </p>
 
           <div className="details-stack-box">
-            <div style={{ height: '250px' }}>
+            <div>
               <span style={{ color: '#BDBDBD' }} className="T20">Бэкенд</span>
               <div className="cowberryStackItemsBox">
                 {stack.map((el, index: any)=> (
@@ -82,20 +82,20 @@ const CowberryDetailScreen: React.FC = () => {
         </div>
       </div>
 
-      <p style={{ marginLeft: 'clamp(1rem, 0.276rem + 2.89vw, 3.75rem)' }} className="H20B">
+      <p style={{ marginLeft: 'clamp(1rem, 0.276rem + 2.89vw, 3.75rem)' }} className="H2">
         Следующие кейсы
       </p>
 
       <div className="utg-next-cases-container">
         <PortfolioElem
           caseScreen={'/vtb-detail'}
-          description={'Смотреть кейс'}
+          description={'Подробнее'}
           src={require('../../assets/images/portfolio1.png')}
         />
         <PortfolioElem
-          caseScreen={''}
-          description={'Еще заполняем'}
-          src={require('../../assets/images/portfolio3.png')}
+          caseScreen={'/utg-detail'}
+          description={'Подробнее'}
+          src={require('../../assets/images/portfolio2.png')}
         />
       </div>
 

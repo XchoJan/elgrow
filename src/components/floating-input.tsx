@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 interface FloatingInputProps {
   type?: string;
@@ -16,21 +16,24 @@ const FloatingInput: React.FC<FloatingInputProps> = ({
   onChange,
   label,
   name = 'input'
-}) => (
-  <div id="float-label" className={value ? 'has-value' : ''}>
-    <input
-      type={type}
-      placeholder={placeholder}
-      value={value}
-      onChange={onChange}
-      name={name}
-      id={name}
-    />
+}) => {
+  const id = useMemo(()=>Math.random().toString(), []);
+  return (
+    <div className="float-label">
+      <label className="floating-placeholder" htmlFor={id}>
+        {label || placeholder}
+      </label>
 
-    <label htmlFor={name}>
-      {label || placeholder}
-    </label>
-  </div>
-);
+      <input
+        type={type}
+        value={value}
+        onChange={onChange}
+        name={name}
+        id={id}
+        className={label && label.length > 60 ? 'large-label' : ''}
+      />
+    </div>
+  );
+};
 
 export default FloatingInput;

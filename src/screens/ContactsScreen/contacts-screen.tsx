@@ -9,7 +9,7 @@ const ContactsScreen: React.FC = () => {
 
 
   return (
-    <div style={{ overflow: 'hidden', height: '100vh', scrollbarWidth: 'none' }}>
+    <div style={{ overflowY: 'auto', height: '100vh', overflowX: 'hidden', scrollbarWidth: 'none' }}>
       <div style={{}}>
         <Form
           onClickClose={() => setIsVisibleForm(false)}
@@ -21,21 +21,21 @@ const ContactsScreen: React.FC = () => {
 
         <div className="contactsContainer" style={{ overflow: 'hidden', }}>
           <div style={{ marginRight: '70px', marginBottom: '24px' }}>
-            <p className="contactsTitle">Москва</p>
-            <p className="contactsDescription">
+            <p className="t1">Москва</p>
+            <p className="t3" style={{ color: '#878787', width: '245px' }}>
               ул. Складочная, д. 3 строение 4, оф. 103
             </p>
-            <p style={{ color: '#0D0D0D' }} className="contactsDescription">
+            <p style={{ color: '#0D0D0D' }} className="t3">
               +7 495 118 93 56
             </p>
           </div>
 
           <div>
-            <p className="contactsTitle">Екатеринбург</p>
-            <p className="contactsDescription">
-              ул. Мамина-Сибиряка, строение. 145, оф. 2112
+            <p className="t1">Екатеринбург</p>
+            <p className="t3" style={{ color: '#878787', width: '245px' }}>
+              ул. Мамина-Сибиряка, строение. 145, оф. 2112
             </p>
-            <p style={{ color: '#0D0D0D' }} className="contactsDescription">
+            <p style={{ color: '#0D0D0D' }} className="t3">
               +7 922 152 15 63
             </p>
           </div>

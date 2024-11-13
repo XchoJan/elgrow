@@ -10,7 +10,7 @@ const StackItem: React.FC<StackProps> = ({ title, icon, description }) => (
     <p className="stackTitle">{title}</p>
     <div style={{ display: 'flex' }}>
       <img src={icon}/>
-      <p className="stackDescription">{description}</p>
+      <p className="stackDescription t3">{description}</p>
     </div>
   </div>
 );

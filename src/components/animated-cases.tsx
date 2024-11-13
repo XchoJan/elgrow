@@ -10,7 +10,7 @@ interface AnimatedCasesProps {
 const AnimatedCases: React.FC<AnimatedCasesProps>  = ({ title, link, onClick }) => (
   <div onClick={onClick} className="casesBox">
     <Link style={{ textDecoration: 'none' }} to={link}>
-      <span style={{ color: '#000' }}>{title} <img
+      <span style={{ color: '#303030', fontSize: '20px', fontWeight: 400 }}>{title} <img
         src={CaseArrow}
         alt=""
         style={{ marginBottom: '4px', marginLeft: '6px' }}

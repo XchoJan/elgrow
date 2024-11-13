@@ -45,36 +45,36 @@ const MenuModal: React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
             style={{ textDecoration: 'none', color: 'black' }}
             to={'/'}
           >
-            <span className="servicesTitles">Главная</span>
+            <span className="servicesTitles H1">Главная</span>
           </Link>
           <Link
             onClick={() => dispatch(setMenuVisibility(false))}
             style={{ textDecoration: 'none', color: 'black' }}
             to={'/services'}
           >
-            <span className="servicesTitles">Услуги</span>
+            <span className="servicesTitles H1">Услуги</span>
           </Link>
           <Link
             onClick={() => dispatch(setMenuVisibility(false))}
             style={{ textDecoration: 'none', color: 'black' }}
             to={'/portfolio'}
           >
-            <span className="servicesTitles">Кейсы</span>
+            <span className="servicesTitles H1">Кейсы</span>
           </Link>
           <Link
             onClick={() => dispatch(setMenuVisibility(false))}
             style={{ textDecoration: 'none', color: 'black' }}
             to={'/contacts'}
           >
-            <span className="servicesTitles">Контакты</span>
+            <span className="servicesTitles H1">Контакты</span>
           </Link>
           <div style={{ height: '40%' }}/>
         </div>
 
       </div>
       <div className="menuCases">
-        <p onClick={openTelegram} className="menuBottomTitles">Telegram</p>
-        <p onClick={()=> setIsVisibleForm(true)} className="menuBottomTitles">Связаться</p>
+        <p onClick={openTelegram} className="menuBottomTitles btnDesc">Telegram</p>
+        <p onClick={()=> setIsVisibleForm(true)} className="menuBottomTitles btnDesc">Связаться</p>
       </div>
 
       <Form

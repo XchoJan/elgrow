@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Header from '../../components/header';
 import Form from '../../components/form';
@@ -11,7 +12,7 @@ import AnimatedCases from '../../components/animated-cases';
 
 const VtbDetailScreen: React.FC = () => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
-
+  const location = useLocation();
   const stack = [
     { name: 'C# .NET', logoPath:  CPlus },
   ];
@@ -19,31 +20,30 @@ const VtbDetailScreen: React.FC = () => {
     { name: 'ReactJS', logoPath: ReactJSIcon },
   ];
 
-
   return (
-    <div>
+    <div >
       <div className="portfolioHeader">
         <Header onPressContactUs={()=> setIsVisibleForm(true)}  minHeight={true}/>
       </div>
 
       <div className="utg-container">
-        <h2 className="utg-title">ВТБ</h2>
+        <h2 className="H1">ВТБ</h2>
         <div className="utg-case-info-box">
           <CaseTitleDescription title={'Аутстаффинг'} description={'Тип работ'}/>
-          <div style={{ width: '100px' }}/>
+          <div style={{ width: '40px' }}/>
           <CaseTitleDescription title={'2021-2023'} description={'Год'}/>
         </div>
 
         <div>
-          <img className="utg-img" src={require('../../assets/images/vtbImage.png')}/>
+          <img className="utg-img" src={require('../../assets/images/vtbNew.png')}/>
 
-          <p className="H20B">
+          <p className="H2">
             Аутстаффинг разработчиков
           </p>
 
           <div className="details-stack-box">
             <div style={{ height: 'auto' }}>
-              <span style={{ color: '#BDBDBD' }} className="T20">Бэкенд</span>
+              <span style={{ color: '#BDBDBD' }} className="t3">Бэкенд</span>
               <div className="cowberryStackItemsBox">
                 {stack.map((el, index: any)=> (
                   <StackItem key={index} icon={el.logoPath} description={el.name}/>
@@ -52,7 +52,7 @@ const VtbDetailScreen: React.FC = () => {
             </div>
 
             <div style={{ height: 'auto' }}>
-              <span style={{ color: '#BDBDBD' }} className="T20">Фронтенд</span>
+              <span style={{ color: '#BDBDBD' }} className="t3">Фронтенд</span>
               <div className="cowberryStackItemsBox">
                 {stack2.map((el, index: any)=> (
                   <StackItem key={index} icon={el.logoPath} description={el.name}/>
@@ -63,20 +63,20 @@ const VtbDetailScreen: React.FC = () => {
         </div>
       </div>
 
-      <p style={{ marginLeft: 'clamp(1rem, 0.276rem + 2.89vw, 3.75rem)' }} className="H20B">
+      <p style={{ marginLeft: 'clamp(1rem, 0.276rem + 2.89vw, 3.75rem)' }} className="H2">
         Следующие кейсы
       </p>
 
       <div className="utg-next-cases-container">
         <PortfolioElem
-          caseScreen={''}
-          description={'Еще заполняем'}
-          src={require('../../assets/images/portfolio4.png')}
+          caseScreen={'/utg-detail'}
+          description={'Смотреть кейс'}
+          src={require('../../assets/images/portfolio2.png')}
         />
         <PortfolioElem
           caseScreen={'/cowberry-detail'}
           description={'Смотреть кейс'}
-          src={require('../../assets/images/portfolio6.jpg')}
+          src={require('../../assets/images/portfolio6.png')}
         />
       </div>
 

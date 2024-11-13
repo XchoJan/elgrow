@@ -24,21 +24,19 @@ const MainScreen: React.FC = () => {
         </div>
 
         <div className="mainRightContent">
-          <div
+          <Link
+            onMouseEnter={() => setIsHovered1(true)}
+            onMouseLeave={() => setIsHovered1(false)}
+            to={'/services'}
             style={{
-              borderColor: isHovered1 ? '#CFCFCF' : '#fff'
+              borderColor: isHovered1 ? '#CFCFCF' : '#fff',
+              cursor: 'pointer',
+              textDecoration: 'none'
             }}
             className="rightElem ">
-            <Link
-              style={{ textDecoration: 'none' }}
-              to={'/services'}
-              onMouseEnter={() => setIsHovered1(true)}
-              onMouseLeave={() => setIsHovered1(false)}
-            >
-              <div className="rightElemTitleContainer main-link-1">
-                <Tab title={'услуги'} />
-              </div>
-            </Link>
+            <div className="rightElemTitleContainer main-link-1">
+              <Tab elemIsHovered={isHovered1} title={'услуги'} />
+            </div>
 
             <img
               style={{
@@ -50,27 +48,26 @@ const MainScreen: React.FC = () => {
               src={require('../../assets/images/main1.png')}
               alt="Main Service"
             />
-          </div>
+          </Link>
 
-          <div
+          <Link
+            onMouseEnter={() => setIsHovered2(true)}
+            onMouseLeave={() => setIsHovered2(false)}
+            to={'/portfolio'}
             style={{
-              borderColor: isHovered2 ? '#CFCFCF' : '#fff'
+              borderColor: isHovered2 ? '#CFCFCF' : '#fff',
+              cursor: 'pointer',
+              textDecoration: 'none'
             }}
-            className="rightElem">
-            <Link
-              style={{ textDecoration: 'none' }}
-              to={'/portfolio'}
-              onMouseEnter={() => setIsHovered2(true)}
-              onMouseLeave={() => setIsHovered2(false)}
-            >
-              <div className="rightElemTitleContainer main-link-2">
-                <Tab title={'кейсы'} />
-              </div>
-            </Link>
+            className="rightElem"
+          >
+            <div className="rightElemTitleContainer main-link-2">
+              <Tab elemIsHovered={isHovered2} title={'кейсы'} />
+            </div>
 
             <img
               style={{
-                paddingTop: '100%',
+                paddingTop: '56%',
                 marginTop: isHovered2 ? '24px' : '0',
                 opacity: isHovered2 ? 1 : 0,
               }}
@@ -78,27 +75,26 @@ const MainScreen: React.FC = () => {
               src={require('../../assets/images/main2.png')}
               alt="Main Portfolio"
             />
-          </div>
+          </Link>
 
-          <div
+          <Link
+            onMouseEnter={() => setIsHovered3(true)}
+            onMouseLeave={() => setIsHovered3(false)}
+            to={'/contacts'}
             style={{
-              borderColor: isHovered3 ? '#CFCFCF' : '#fff'
+              borderColor: isHovered3 ? '#CFCFCF' : '#fff',
+              cursor: 'pointer',
+              textDecoration: 'none'
             }}
-            className="rightElem ">
-            <Link
-              style={{ textDecoration: 'none' }}
-              to={'/contacts'}
-              onMouseEnter={() => setIsHovered3(true)}
-              onMouseLeave={() => setIsHovered3(false)}
-            >
-              <div className="rightElemTitleContainer main-link-3">
-                <Tab title={'контакты'} />
-              </div>
-            </Link>
+            className="rightElem "
+          >
+            <div className="rightElemTitleContainer main-link-3">
+              <Tab elemIsHovered={isHovered3} title={'контакты'} />
+            </div>
 
             <img
               style={{
-                paddingTop: '85%',
+                paddingTop: '50%',
                 marginTop: isHovered3 ? '24px' : '0',
                 opacity: isHovered3 ? 1 : 0,
               }}
@@ -106,7 +102,7 @@ const MainScreen: React.FC = () => {
               src={require('../../assets/images/main3.png')}
               alt="Main Contacts"
             />
-          </div>
+          </Link>
         </div>
 
         <MenuItems/>
@@ -127,7 +123,7 @@ const MainScreen: React.FC = () => {
 
 
         <div className="mainDescriptionBox">
-          <p className="mainDescription">
+          <p className="t2">
             Разработка и интеграция IT-решений <br /> Автоматизация бизнеса{' '}
             <br /> Аутстаффинг специалистов
           </p>

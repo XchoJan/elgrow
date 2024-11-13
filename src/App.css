@@ -56,32 +56,127 @@ html, body {
     font-family: "InterTight", sans-serif;
 }
 
+.H1{
+    font-size: 80px;
+    line-height: 96px;
+    font-weight: 300;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+}
+
+
+.H2{
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+}
+
+.H3{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+}
+
+.t1{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+}
+
+.t2{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+}
+
+.t3{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+
+}
+
+
+.t4{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+}
+
+.btnDesc{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #303030;
+    font-family: InterTight, sans-serif;
+}
+
+
+
 
 .H30B {
-    font-weight: 700;
+    font-weight: 400;
     font-size: clamp(1.25rem, 1.086rem + 0.66vw, 1.875rem);
     line-height: 37px;
     color: #0D0D0D;
     margin-bottom: 24px;
-    font-family: InterTight;
+    font-family: InterTight, sans-serif;
+}
+
+.H26R {
+    font-weight: 400;
+    font-size: clamp(1.25rem, 1.151rem + 0.39vw, 1.625rem);
+    line-height: 37px;
+    color: #0D0D0D;
+    margin-bottom: 24px;
+    font-family: InterTight, sans-serif;
 }
 
 .H20B {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 37px;
+    color: #0D0D0D;
+    margin-bottom: 24px;
+    font-family: InterTight, sans-serif;
+}
+.H20R {
     font-weight: 400;
     font-size: 20px;
     line-height: 37px;
     color: #0D0D0D;
     margin-bottom: 24px;
-    font-family: InterTight;
+    font-family: InterTight, sans-serif;
+}
+
+.H26B {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D0D0D;
+    margin-bottom: 24px;
+    font-family: InterTight, sans-serif;
 }
 
 .T20 {
     font-weight: 300;
-    font-size: clamp(1rem, 0.934rem + 0.26vw, 1.25rem);
+    font-size: 20px;
     line-height: 25px;
     color: #0D0D0D;
     margin-bottom: 24px;
-    font-family: InterTight;
+    font-family: InterTight, sans-serif;
 }
 
 
@@ -145,12 +240,7 @@ html, body {
 }
 
 .rightElemTitle {
-    font-size: 18px;
-    color: #0D0D0D;
-    line-height: 22px;
-    font-weight: 300;
     margin-bottom: 8px;
-    font-family: InterTight, sans-serif;
 }
 
 
@@ -162,7 +252,7 @@ html, body {
 }
 
 .contactUsBtn {
-    width: 287px;
+    width: 272px;
     height: 102px;
     background-color: #E6E6E6;
     border-top-right-radius: 1000px;
@@ -177,8 +267,8 @@ html, body {
 }
 
 .contactUsBtnReversed {
-    width: 197px;
-    height: 76px;
+    width: 242px;
+    height: 102px;
     background-color: #E6E6E6;
     border-top-left-radius: 1000px;
     border-bottom-left-radius: 1000px;
@@ -205,24 +295,21 @@ html, body {
 }
 
 .contactUsBtnImgReversed {
-    width: 60px;
-    height: 60px;
+    width: 78px;
+    height: 78px;
     margin-right: 18px
 }
 
 .contactUsBtnTitle {
-    font-size: clamp(1.125rem, 1.059rem + 0.26vw, 1.375rem);
-    font-weight: 400;
-    line-height: 27px;
-    margin-top: 18px
+    margin-top: 18px;
 }
 
 .contactUsBtn:hover {
-    width: 310px;
+    width: 282px;
 }
 
 .contactUsBtnReversed:hover {
-    width: 210px;
+    width: 252px;
     transition: 0.4s;
 }
 
@@ -246,12 +333,12 @@ html, body {
 }
 
 .subtract {
-    display: none;
+    visibility: hidden;
     width: auto;
 }
 
 .tabContainer:hover .subtract {
-    display: block;
+    visibility: visible;
 }
 
 .tabContainer.active .rightElemTitle {
@@ -290,19 +377,14 @@ html, body {
     visibility: hidden;
 }
 
-.mainDescription {
-    font-weight: 300;
-    font-size: clamp(1rem, 0.77rem + 0.92vw, 1.875rem);
-    line-height: 34px;
-    font-family: InterTight;
-}
-
 .elgrowLogo {
     position: absolute;
     width: 60%;
     height: 50%;
     right: 90px;
     top: 30%;
+    pointer-events: none;
+
 }
 
 .menuBtn {
@@ -368,10 +450,11 @@ html, body {
 .servicesFiltersElem {
     cursor: pointer;
     color: #BDBDBD;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 26px;
     margin-bottom: 24px;
     width: fit-content;
+    font-family: InterTight, sans-serif;
 }
 
 .servicesFiltersElem:hover {
@@ -384,16 +467,13 @@ html, body {
 }
 
 .servicesActiveFiltersDescription {
-    font-size: clamp(1.75rem, 1.553rem + 0.79vw, 2.5rem);
-    font-weight: 400;
-    line-height: clamp(2.063rem, 1.816rem + 0.99vw, 3rem);
-    color: #0D0D0D;
     white-space: pre-line;
+    margin-bottom: 40px;
 }
 
 .servicesDescriptionBox {
     max-width: 600px;
-    margin: 0 0 0 clamp(0rem, -17.857rem + 35.71vw, 25rem)
+    margin: 0 0 0 clamp(0rem, -17.857rem + 29.71vw, 25rem);
 }
 
 .casesBox {
@@ -490,13 +570,11 @@ html, body {
     display: block;
     margin-bottom: 15px;;
     cursor: pointer;
-    color: #0D0D0D;
-    font-weight: 300;
-    font-size: clamp(1.75rem, 0.935rem + 3.26vw, 2.5rem)
+    font-size: 40px;
+    line-height: 48px;
 }
 .menuBottomTitles{
     color: #BDBDBD;
-    font-size: 22px;
     cursor: pointer;
 }
 .contactUsBtnReversed {
@@ -508,7 +586,7 @@ html, body {
     top: 0;
     background-color: #fff;
     z-index: 3;
-    height: 100px;
+    height: 78px;
 }
 
 .portfolioImgWrapper {
@@ -584,8 +662,13 @@ html, body {
 }
 
 .formCloseIcon {
-    display: none;
     justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 30px;
 }
 
 .formLeft {
@@ -632,15 +715,16 @@ html, body {
 
 .form-submit-btn {
     padding: 10px 20px;
-    background-color: #000;
+    background-color: #303030;
     color: #fff;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     width: 370px;
     margin: 24px auto;
     text-align: center;
     border: 1px solid black;
+    font-family: InterTight, sans-serif;
 
 }
 
@@ -664,10 +748,9 @@ html, body {
 
 
 .form-label {
-    font-size: 14px;
-    color: #0D0D0D;
     display: block;
     margin-bottom: 10px;
+
 }
 
 .radio-group {
@@ -697,10 +780,6 @@ html, body {
     margin-right: 8px;
 }
 
-.radio-label {
-    font-size: 14px;
-    color: #0D0D0D;
-}
 
 .formCloseCircle {
     width: 110px;
@@ -717,12 +796,9 @@ html, body {
 
 .privacyText {
     text-align: center;
-    font-size: 16px;
     cursor: pointer;
     text-decoration: underline;
-    color: #0D0D0D;
-    font-weight: 400;
-    padding-bottom: 2px
+    padding-bottom: 2px;
 }
 
 .formBottomContent {
@@ -734,7 +810,7 @@ html, body {
 }
 
 .horizontalLine {
-    width: 124px;
+    width: 135px;
     height: 1px;
     background-color: #BDBDBD;
     margin-top: 4px;
@@ -749,6 +825,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row
 }
 
 .mainBottomContentLink {
@@ -780,9 +857,9 @@ html, body {
 .contactsContainer {
     display: flex;
     flex-direction: row;
-    width: 560px;
-    margin: 220px auto 80px auto;
-    overflow: hidden
+    margin: 220px auto 50px auto;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .contactsTitle {
@@ -823,7 +900,9 @@ html, body {
     font-size: 20px;
     font-weight: 300;
     line-height: 32px;
-    color: #000
+    color: #000;
+    font-family: InterTight, sans-serif;
+
 }
 
 .case-item-description {
@@ -832,6 +911,8 @@ html, body {
     line-height: 32px;
     color: #BDBDBD;
     margin-bottom: 8px;
+    font-family: InterTight, sans-serif;
+
 }
 
 .utg-container {
@@ -841,15 +922,16 @@ html, body {
 
 .utg-title {
     font-size: clamp(2.5rem, 1.678rem + 3.29vw, 5.625rem);
-    line-height: 125px;
+    line-height: clamp(1.75rem, 0.438rem + 5.25vw, 6.75rem);
     font-weight: 300;
-    text-align: left
+    text-align: left;
+    font-family: InterTight, sans-serif;
 }
 
 .utg-case-info-box {
     display: flex;
     justify-content: flex-start;
-    margin-top: 40px
+    margin-top: 40px;
 }
 
 .utg-img {
@@ -886,15 +968,14 @@ html, body {
 
 .stackTitle {
     color: #BDBDBD;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 0
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
+    font-family: InterTight, sans-serif;
+
 }
 
 .stackDescription {
-    color: #0D0D0D;
-    font-size: 20px;
-    font-weight: 300;
     margin-top: 14px;
     margin-left: 8px;
 }
@@ -953,14 +1034,11 @@ html, body {
 }
 
 .brif-title{
-    font-size: clamp(2.5rem, 1.678rem + 3.29vw, 5.625rem);
-    font-weight: 300;
     margin-bottom: 80px;
-    color: #0D0D0D
 }
 .H28R{
     font-size: clamp(1.25rem, 1.118rem + 0.53vw, 1.75rem);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 24px;
     color: #0D0D0D
 }
@@ -976,8 +1054,19 @@ html, body {
     margin-bottom: 30px
 }
 
+.utg-li{
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-color: #4242FD;
+    color: #4242FD;
+    cursor: pointer;
+}
+.utg-li:hover{
+    color: #BDBDBD;
+    text-decoration-color: #BDBDBD;
 
-
+}
 
 
 
@@ -1005,7 +1094,47 @@ html, body {
 
 }
 
+.sliderLeft{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 50%;
+    border-width: 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.sliderRight{
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    right: 0;
+    border-width: 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.sliderArrowsStyle{
+    width: 100%;
+    height: 100%;
+}
+
+.sliderRight{
+    width: 78px;
+    height: 78px;
+}
+.sliderLeft{
+    width: 78px;
+    height: 78px;
+}
+
 @media (max-width: 1025px) {
+    #float-label input.large-label {
+        height: 77px;
+    }
+    .mainScreenAppLogo{
+        visibility: visible;
+    }
       .mainContainer {
         padding-left: 30px;
     }
@@ -1093,9 +1222,23 @@ html, body {
 
 
 @media (max-width: 768px) {
-    .mainScreenAppLogo{
-        visibility: visible;
+    #float-label input.large-label {
+        height: 87px;
     }
+    .sliderArrowsStyle{
+        width: 100%;
+        height: 100%;
+    }
+    .sliderRight{
+        width: 40px;
+        height: 40px;
+    }
+    .sliderLeft{
+        width: 40px;
+        height: 40px;
+    }
+
+
     .mainContainer {
         padding-left: 30px;
     }
@@ -1116,12 +1259,7 @@ html, body {
     }
 
     .formCloseIcon {
-        display: flex;
-        width: 100%;
-        cursor: pointer;
-        position: absolute;
-        top: 40px;
-        right: 16px;
+
 
     }
 
@@ -1287,10 +1425,49 @@ html, body {
     .breif-radio-group{
         flex-direction: column
     }
+
 }
 
 @media (max-width: 400px) {
+    .H1{
+        font-size: 40px;
+        line-height: 48px;
+    }
 
+    .H2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .H3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .t1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .t2{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .t3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .btnDesc{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .formContactsBox{
+        flex-direction: column
+    }
     .form-radio-container{
         max-width: 365px;
     }
@@ -1427,7 +1604,7 @@ html, body {
     }
 
     .case-item-description {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .case-item-title {
@@ -1453,6 +1630,9 @@ html, body {
 
 
 @media (max-width: 545px) {
+    #float-label input.large-label {
+        height: 105px;
+    }
     .details-stack-box{
         flex-direction: column;
     }
@@ -1462,7 +1642,8 @@ html, body {
     .contactsContainer {
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 125px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
     .contactsCuntactUsBtn{
        margin-left: 16px;
@@ -1496,44 +1677,38 @@ html, body {
     }
 }
 
-#float-label {
+.float-label {
     display: flex;
     flex-direction: column;
     min-width: 350px;
     position: relative;
+    margin-bottom: 16px;
+
 }
 
-#float-label input {
+.float-label input {
     width: 100%;
-    height: 62px;
-    padding: 20px 16px 0 0;
+    height: 28px;
     outline: 0;
     background: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: InterTight, sans-serif;
+    font-size: 18px;
     border-width: 0;
     border-bottom-width: 1px;
     margin-left: 10px;
     border-bottom-color: #BDBDBD;
     border-radius: 0;
+    color: #303030;
+    padding-bottom: 4px;
 }
 
-#float-label label {
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+.float-label label {
+    font-family: InterTight, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     padding: 0 12px;
-    color: #999;
-    pointer-events: none;
-    position: absolute;
-    transform: translate(0, 26px) scale(1);
-    transform-origin: top left;
-    transition: all 0.2s ease-out;
-    line-height: 0.8;
-}
-
-#float-label:focus-within label,
-#float-label.has-value label {
-    transform: translate(0, 12px) scale(0.75);
+    color: #878787;
+    line-height: 28px;
 }
 
 

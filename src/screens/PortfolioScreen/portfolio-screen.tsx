@@ -9,9 +9,9 @@ const PortfolioScreen: React.FC = () => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
   const images = [
     { uri: require('../../assets/images/portfolio1.png'), description: 'Подробнее', screen: '/vtb-detail' },
-    { uri: require('../../assets/images/portfolio6.jpg'), description: 'Подробнее', screen: '/cowberry-detail' },
+    { uri: require('../../assets/images/portfolio6.png'), description: 'Подробнее', screen: '/cowberry-detail' },
     { uri: require('../../assets/images/portfolio2.png'), description: 'Подробнее', screen: '/utg-detail' },
-    { uri: require('../../assets/images/portfolio3.png'), description: 'Подробнее' },
+    { uri: require('../../assets/images/portfolio3.png'), description: 'Подробнее', screen: '/utg-support' },
     // { uri: require('../../assets/images/portfolio4.png'), description: 'Еще заполняем' },
     // { uri: require('../../assets/images/portfolio5.png'), description: 'Еще заполняем' },
     // { uri: require('../../assets/images/portfolio7.png'), description: 'Еще заполняем' },

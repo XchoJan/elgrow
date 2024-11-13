@@ -9,10 +9,11 @@ import UtgDetailScreen from '../screens/PortfolioScreen/utg-detail-screen';
 import VtbDetailScreen from '../screens/PortfolioScreen/vtb-detail-screen';
 import CowberryDetailScreen from '../screens/PortfolioScreen/cowberry-detail-screen';
 import BriefScreen from '../screens/BriefScreen/brief-screen';
+import UtgSupportScreen from '../screens/PortfolioScreen/utg-support-screen';
 import Wrapper from '../components/wrapper';
 
 const RootRouter: React.FC = () => (
-  <Router basename="/">
+  <Router basename="/elgrow">
     <Wrapper>
       <Routes>
         <Route path="/" element={<MainScreen />} />
@@ -23,6 +24,7 @@ const RootRouter: React.FC = () => (
         <Route path="/vtb-detail" element={<VtbDetailScreen />} />
         <Route path="/cowberry-detail" element={<CowberryDetailScreen />} />
         <Route path="/brief" element={<BriefScreen />} />
+        <Route path="/utg-support" element={<UtgSupportScreen />} />
       </Routes>
     </Wrapper>
   </Router>
