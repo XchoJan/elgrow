@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.6ee84f3a.css",
-    "main.js": "/elgrow/static/js/main.895bc8b6.js",
+    "main.css": "/elgrow/static/css/main.0dea8b03.css",
+    "main.js": "/elgrow/static/js/main.96f20fd1.js",
     "static/js/453.87808007.chunk.js": "/elgrow/static/js/453.87808007.chunk.js",
     "static/media/main1.jpg": "/elgrow/static/media/main1.71d86b0d52f6f3ce3310.jpg",
     "static/media/main2.jpg": "/elgrow/static/media/main2.c80b10bdeb6206bc85e7.jpg",
@@ -76,12 +76,12 @@
     "static/media/burger.svg": "/elgrow/static/media/burger.bdacf9cb14142cd97455f40e1de8cc92.svg",
     "static/media/close.svg": "/elgrow/static/media/close.d0abef0a14c405b75c4152f978bf691e.svg",
     "static/media/hoveredCloseIcon.svg": "/elgrow/static/media/hoveredCloseIcon.f1623832bc63824e9f3e0fb57403b08d.svg",
-    "main.6ee84f3a.css.map": "/elgrow/static/css/main.6ee84f3a.css.map",
-    "main.895bc8b6.js.map": "/elgrow/static/js/main.895bc8b6.js.map",
+    "main.0dea8b03.css.map": "/elgrow/static/css/main.0dea8b03.css.map",
+    "main.96f20fd1.js.map": "/elgrow/static/js/main.96f20fd1.js.map",
     "453.87808007.chunk.js.map": "/elgrow/static/js/453.87808007.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ee84f3a.css",
-    "static/js/main.895bc8b6.js"
+    "static/css/main.0dea8b03.css",
+    "static/js/main.96f20fd1.js"
   ]
 }
