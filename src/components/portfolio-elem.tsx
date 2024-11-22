@@ -4,10 +4,18 @@ import { Link } from 'react-router-dom';
 interface PortfolioProps {
   src?: string,
   description?: string,
-  caseScreen?: any
+  caseScreen?: any,
+  color?: string,
+  title?: string
 }
 
-const PortfolioElem: React.FC<PortfolioProps> = ({ src, description, caseScreen }) => {
+const PortfolioElem: React.FC<PortfolioProps> = ({
+  src,
+  description,
+  caseScreen,
+  color,
+  title
+}) => {
 
   const getCursorType = (description?: string): string => {
     if (description === 'Подробнее') return 'pointer';
@@ -22,10 +30,13 @@ const PortfolioElem: React.FC<PortfolioProps> = ({ src, description, caseScreen 
     >
       <div className="portfolioElemImgAnim">
         <Link style={{ textDecoration: 'none' }} to={caseScreen}>
-          <span  style={{ cursor: getCursorType(description) }} className="portfolioElemImgAnimText">{description}</span>
+          <span  style={{ cursor: getCursorType(description) }} className="portfolioElemImgAnimText">
+            {description}
+          </span>
         </Link>
       </div>
       <img className="portfolioElemImg" src={src} alt="" />
+      <p style={{ color: color }} className="portfolioElemTitle H2">{title}</p>
     </div>
   );
 };

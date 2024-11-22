@@ -20,6 +20,11 @@ const UtgSupportScreen:React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
 
+  useEffect(() => {
+    document.body.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   // Функция для обновления ширины экрана
@@ -129,7 +134,7 @@ const UtgSupportScreen:React.FC = () => {
           <div
             onMouseMove={()=> setIsHovered(true)}
             onMouseLeave={()=> setIsHovered(false)}
-            className="box"  style={{ marginBottom: '56px', position: 'relative' }}
+            className="box"  style={{ marginBottom: '56px', position: 'relative', marginTop: '44px' }}
           >
             <Carousel
               showIndicators={false}
@@ -184,8 +189,20 @@ const UtgSupportScreen:React.FC = () => {
       </p>
 
       <div className="utg-next-cases-container">
-        <PortfolioElem caseScreen={'/utg-detail'}  description={'Подробнее'} src={require('../../assets/images/portfolio2.png')}/>
-        <PortfolioElem caseScreen={'/cowberry-detail'}  description={'Подробнее'} src={require('../../assets/images/portfolio6.png')}/>
+        <PortfolioElem
+          caseScreen={'/utg-detail'}
+          description={'Подробнее'}
+          src={require('../../assets/images/portfolio2.png')}
+          title="UTG Учебный центр"
+          color="#fff"
+        />
+        <PortfolioElem
+          caseScreen={'/cowberry-detail'}
+          description={'Подробнее'}
+          src={require('../../assets/images/portfolio6.png')}
+          title="Брусника"
+          color="#fff"
+        />
       </div>
 
       <div className="utg-all-cases">

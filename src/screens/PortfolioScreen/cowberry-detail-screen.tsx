@@ -23,12 +23,16 @@ const CowberryDetailScreen: React.FC = () => {
     { name: 'NestJS', logoPath: NestJSIcon },
     { name: 'Java Spring', logoPath: JavaSpringIcon },
     { name: 'PostGIS', logoPath: PostGisIcon },
-    { id: 'onlyIcon', logoPath: MongoDBIcon },
+    { name: 'mongoDB', logoPath: MongoDBIcon },
   ];
   const stack2 = [
     { name: 'ReactJS', logoPath: ReactJSIcon },
   ];
 
+
+  useEffect(() => {
+    document.body.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   useEffect(() => {
     if (!scrollRef.current) return;
@@ -91,11 +95,16 @@ const CowberryDetailScreen: React.FC = () => {
           caseScreen={'/vtb-detail'}
           description={'Подробнее'}
           src={require('../../assets/images/portfolio1.png')}
+          title="ВТБ"
+          color="#030303"
+
         />
         <PortfolioElem
           caseScreen={'/utg-detail'}
           description={'Подробнее'}
           src={require('../../assets/images/portfolio2.png')}
+          title="UTG Учебный центр"
+          color="#fff"
         />
       </div>
 

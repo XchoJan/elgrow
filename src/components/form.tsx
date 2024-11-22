@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-import LeftArrow from '../assets/svg/arrow-left.svg';
 import CloseIcon from '../assets/svg/close.svg';
+import HoveredCloseIcon from '../assets/svg/hoveredCloseIcon.svg';
 
 import AnimatedCases from './animated-cases';
-import FloatingInput from './floating-input';
+import PoliticBtn from './politic-btn';
+import LabelInput from './LabelInput';
 
 interface FormProps {
   isVisible: boolean;
@@ -25,11 +26,13 @@ const FormContainer: React.FC<FormProps> = ({
 
   const [success, setSuccess] = useState(false);
 
+  const [closeIsHovered, setCloseIsHovered] = useState(false);
+
   const budged = [
     { name: 'менее 0.5 млн' },
     { name: '1 - 3 млн' },
     { name: '0.5 - 1 млн' },
-    { name: 'Более 3 млн' },
+    { name: 'более 3 млн' },
   ];
 
   const handleBudgetChange = (e: any) => {
@@ -88,42 +91,47 @@ const FormContainer: React.FC<FormProps> = ({
       <div className={`formLeft ${isVisible && 'formLeftVisible'}`}>
         <div style={ isVisible ? { overflowY: 'auto', height: '100%' } : {}}>
           <div className="form-container">
-            <div onClick={onClickClose} className="formCloseIcon">
-              <img src={CloseIcon} />
+            <div
+              onClick={onClickClose}
+              className="formCloseIcon"
+              onMouseMove={()=> setCloseIsHovered(true)}
+              onMouseLeave={()=> setCloseIsHovered(false)}
+            >
+              <img style={{ width: '16px', height: '16px' }} src={closeIsHovered ? HoveredCloseIcon : CloseIcon} />
             </div>
             <form onSubmit={handleSubmit}>
-              <FloatingInput
+              <LabelInput
                 type="text"
                 value={input1}
-                onChange={e => setInput1(e.target.value)}
+                onChange={(e: any) => setInput1(e.target.value)}
                 label="Имя"
               />
 
-              <FloatingInput
+              <LabelInput
                 type="text"
                 value={input2}
-                onChange={e => setInput2(e.target.value)}
+                onChange={(e: any) => setInput2(e.target.value)}
                 label="Компания"
               />
 
-              <FloatingInput
+              <LabelInput
                 type="text"
                 value={input3}
-                onChange={e => setInput3(e.target.value)}
+                onChange={(e: any) => setInput3(e.target.value)}
                 label="Номер телефона"
               />
 
-              <FloatingInput
+              <LabelInput
                 type="text"
                 value={input4}
-                onChange={e => setInput4(e.target.value)}
+                onChange={(e: any) => setInput4(e.target.value)}
                 label="Расскажите о вашей задаче"
               />
             </form>
           </div>
 
           <div className="form-radio-container">
-            <label className="form-label t3">Бюджет</label>
+            <label style={{ fontSize: '20px' }} className="form-label t3">Бюджет</label>
             <div className="radio-group">
               {budged.map((el, index) => (
                 <div key={index} className="radio-item">
@@ -136,7 +144,13 @@ const FormContainer: React.FC<FormProps> = ({
                     onChange={handleBudgetChange}
                     checked={selectedBudget === el.name}
                   />
-                  <label htmlFor={`budged-${index}`} className="t3">
+                  <label
+                    style={{
+                      color: selectedBudget === el.name ? '#303030' : '#878787',
+                      fontSize: '16px'
+                    }}
+                    htmlFor={`budged-${index}`} className="t3"
+                  >
                     {el.name}
                   </label>
                 </div>
@@ -150,7 +164,8 @@ const FormContainer: React.FC<FormProps> = ({
 
           {success && <span className="success">Успешно отправлено!</span>}
 
-          <p className="privacyText t4">Политика обработки персональных данных</p>
+
+          <PoliticBtn/>
 
           <div className="formBottomContent">
             <div className="formBottomContent">
@@ -163,7 +178,7 @@ const FormContainer: React.FC<FormProps> = ({
 
           <div className="formContactsBox">
             <AnimatedCases link={'/brief'} title={'Заполнить бриф'} />
-            <div style={{ width: '52px' }} />
+            <div style={{ width: '30px' }} />
             <AnimatedCases
               onClick={openTelegram}
               title={'Написать в Telegram'}

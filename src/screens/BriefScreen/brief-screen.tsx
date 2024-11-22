@@ -3,7 +3,8 @@ import { useDispatch } from 'react-redux';
 import emailjs from 'emailjs-com';
 
 import Header from '../../components/header';
-import FloatingInput from '../../components/floating-input';
+import LabelInput from '../../components/LabelInput';
+import PoliticBtn from '../../components/politic-btn';
 
 const BriefScreen: React.FC = () => {
   const dispatch = useDispatch();
@@ -148,31 +149,31 @@ const BriefScreen: React.FC = () => {
           бюджет или сроки, сразу это подсветим
         </span>
 
-        <div style={{ marginLeft: '-10px', marginTop: '40px' }}>
-          <FloatingInput
+        <div style={{  marginTop: '40px' }}>
+          <LabelInput
             type="text"
             value={companyName}
-            onChange={e => setCompanyName(e.target.value)}
-            placeholder="Как называется ваша компания?"
+            onChange={(e: any) => setCompanyName(e.target.value)}
+            label="1. Как называется ваша компания?"
 
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={taskDescription}
-            onChange={e => setTaskDescription(e.target.value)}
-            placeholder="Расскажите кратко о задаче"
+            onChange={(e: any) => setTaskDescription(e.target.value)}
+            label="2. Расскажите кратко о задаче"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={projectType}
-            onChange={e => setProjectType(e.target.value)}
-            placeholder="Постоянные ли это работы или единичный проект?"
+            onChange={(e: any) => setProjectType(e.target.value)}
+            label="3. Постоянные ли это работы или единичный проект?"
           />
         </div>
 
         <div className="breif-form-radio-container">
-          <label style={{ marginBottom: '24px' }} className="L18L">
-            Срочность задачи
+          <label style={{ marginBottom: '24px', color: '#878787' }} className="L18L">
+            4. Срочность задачи
           </label>
           <div className="breif-radio-group">
             {budged.map((el, index) => (
@@ -194,153 +195,153 @@ const BriefScreen: React.FC = () => {
           </div>
         </div>
 
-        <div style={{ marginLeft: '-10px', marginBottom: '40px' }}>
-          <FloatingInput
+        <div style={{  marginBottom: '40px' }}>
+          <LabelInput
             type="text"
             value={budgetLimit}
-            onChange={e => setBudgetLimit(e.target.value)}
-            placeholder="Каковы ограничения по бюджету?"
+            onChange={(e: any) => setBudgetLimit(e.target.value)}
+            label="5. Каковы ограничения по бюджету?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={projectParticipants}
-            onChange={e => setProjectParticipants(e.target.value)}
-            placeholder="Кто будет участвовать в проекте на вашей стороне? Кто в этом проекте является ключевым лицом, принимающим решение?"
+            onChange={(e: any) => setProjectParticipants(e.target.value)}
+            label="6. Кто будет участвовать в проекте на вашей стороне? Кто в этом проекте является ключевым лицом, принимающим решение?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={departments}
-            onChange={e => setDepartments(e.target.value)}
-            placeholder="Есть ли в компании ИТ-подразделение? Маркетинг-подразделение? Дизайн-подразделение?"
+            onChange={(e: any) => setDepartments(e.target.value)}
+            label="7. Есть ли в компании ИТ-подразделение? Маркетинг-подразделение? Дизайн-подразделение?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={documentation}
-            onChange={e => setDocumentation(e.target.value)}
-            placeholder="Существует ли какая-то значимая документация (персоны, user flow или другие), которую нам следует изучить перед звонком?"
+            onChange={(e: any) => setDocumentation(e.target.value)}
+            label="8. Существует ли какая-то значимая документация (персоны, user flow или другие), которую нам следует изучить перед звонком?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={ndaRequired}
-            onChange={e => setNdaRequired(e.target.value)}
-            placeholder="Есть ли NDA, который нужно подписать до созвона?"
+            onChange={(e: any) => setNdaRequired(e.target.value)}
+            label="9. Есть ли NDA, который нужно подписать до созвона?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={aboutElgrow}
-            onChange={e => setAboutElgrow(e.target.value)}
-            placeholder="Расскажите кратко, что вы знаете об Elgrow и как нас нашли?"
+            onChange={(e: any) => setAboutElgrow(e.target.value)}
+            label="10. Расскажите кратко, что вы знаете об Elgrow и как нас нашли?"
           />
         </div>
 
-        <p className="H28R">Знакомство</p>
+        <p className="H2">Знакомство</p>
 
-        <span className="L18L">
+        <span className="t3">
           В срок конкретизируем задачу, соберем бизнес-требования в первичный технический документ, покажем кейсы
         </span>
 
 
-        <div style={{ marginLeft: '-10px', marginBottom: '40px', marginTop: '40px' }}>
-          <FloatingInput
+        <div style={{ marginBottom: '40px', marginTop: '40px' }}>
+          <LabelInput
             type="text"
             value={companyWorkStyle}
-            onChange={e => setCompanyWorkStyle(e.target.value)}
-            placeholder="Как вы работаете? На чем зарабатываете?"
+            onChange={(e: any) => setCompanyWorkStyle(e.target.value)}
+            label="1. Как вы работаете? На чем зарабатываете?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={productStructure}
-            onChange={e => setProductStructure(e.target.value)}
-            placeholder="Как устроен ваш продукт? Благодаря чему он развивается?"
+            onChange={(e: any) => setProductStructure(e.target.value)}
+            label="2. Как устроен ваш продукт? Благодаря чему он развивается?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={currentObjective}
-            onChange={e => setCurrentObjective(e.target.value)}
-            placeholder="Какая ближайшая задача сейчас стоит перед продуктом?"
+            onChange={(e: any) => setCurrentObjective(e.target.value)}
+            label="3. Какая ближайшая задача сейчас стоит перед продуктом?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={needForApp}
-            onChange={e => setNeedForApp(e.target.value)}
-            placeholder="Откуда появилась потребность в сайте / приложении / внутренней системе / другом…"
+            onChange={(e: any) => setNeedForApp(e.target.value)}
+            label="4. Откуда появилась потребность в сайте / приложении / внутренней системе / другом…"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={businessGoal}
-            onChange={e => setBusinessGoal(e.target.value)}
-            placeholder="Какую цель для бизнеса преследуем? Например: привлечение клиентов, регистрации, удержание, прибыль, рекомендации и так далее"
+            onChange={(e: any) => setBusinessGoal(e.target.value)}
+            label="5. Какую цель для бизнеса преследуем? Например: привлечение клиентов, регистрации, удержание, прибыль, рекомендации и так далее"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={keyMetrics}
-            onChange={e => setKeyMetrics(e.target.value)}
-            placeholder="Какие ключевые метрики (KPI)?"
+            onChange={(e: any) => setKeyMetrics(e.target.value)}
+            label="6. Какие ключевые метрики (KPI)?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={limitations}
-            onChange={e => setLimitations(e.target.value)}
-            placeholder="Есть ли какие-то ограничения (технологические, связанные с бизнесом и т.п.)?"
+            onChange={(e: any) => setLimitations(e.target.value)}
+            label="7. Есть ли какие-то ограничения (технологические, связанные с бизнесом и т.п.)?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={referenceProducts}
-            onChange={e => setReferenceProducts(e.target.value)}
-            placeholder="Есть ли какие-то продукты, на которые можно ориентироваться? (у конкурентов, из других сфер или другие ваши продукты)"
+            onChange={(e: any) => setReferenceProducts(e.target.value)}
+            label="8. Есть ли какие-то продукты, на которые можно ориентироваться? (у конкурентов, из других сфер или другие ваши продукты)"
           />
 
         </div>
 
 
-        <p className="H28R">Брифинг</p>
+        <p className="H2">Брифинг</p>
 
-        <span className="L18L">
+        <span className="t3">
           Быстро анализируем текущие документы и исследования, выдаем первичное коммерческое предложение
         </span>
 
-        <div style={{ marginLeft: '-10px', marginBottom: '60px', marginTop: '40px' }}>
-          <FloatingInput
+        <div style={{  marginBottom: '60px', marginTop: '40px' }}>
+          <LabelInput
             type="text"
             value={projectGoals}
-            onChange={e => setProjectGoals(e.target.value)}
-            placeholder="Каких ещё целей вы должны достичь в ходе этого проекта?"
+            onChange={(e: any) => setProjectGoals(e.target.value)}
+            label="1. Каких ещё целей вы должны достичь в ходе этого проекта?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={previousAttempts}
-            onChange={e => setPreviousAttempts(e.target.value)}
-            placeholder="Пытались ли раньше закрыть эти задачи? Как? Из того, что вы уже пробовали,что сработало, а что нет?"
+            onChange={(e: any) => setPreviousAttempts(e.target.value)}
+            label="2. Пытались ли раньше закрыть эти задачи? Как? Из того, что вы уже пробовали,что сработало, а что нет?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={productPrinciple}
-            onChange={e => setProductPrinciple(e.target.value)}
-            placeholder="Каков принцип работы продукта? Как он устроен? Из каких частей состоит?"
+            onChange={(e: any) => setProductPrinciple(e.target.value)}
+            label="3. Каков принцип работы продукта? Как он устроен? Из каких частей состоит?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={userAssumptions}
-            onChange={e => setUserAssumptions(e.target.value)}
-            placeholder="Каковы ваши предположения о пользователях? Что вы точно знаете о пользователях?"
+            onChange={(e: any) => setUserAssumptions(e.target.value)}
+            label="4. Каковы ваши предположения о пользователях? Что вы точно знаете о пользователях?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={competitors}
-            onChange={e => setCompetitors(e.target.value)}
-            placeholder="Кто ваши конкуренты? Чем вы от них отличаетесь? Какие у вас преимущества и недостатки?"
+            onChange={(e: any) => setCompetitors(e.target.value)}
+            label="5. Кто ваши конкуренты? Чем вы от них отличаетесь? Какие у вас преимущества и недостатки?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={userAlternatives}
-            onChange={e => setUserAlternatives(e.target.value)}
-            placeholder="Какие у пользователя есть альтернативы в решении этой проблемы, помимо конкурентов?"
+            onChange={(e: any) => setUserAlternatives(e.target.value)}
+            label="6. Какие у пользователя есть альтернативы в решении этой проблемы, помимо конкурентов?"
           />
-          <FloatingInput
+          <LabelInput
             type="text"
             value={additionalInfo}
-            onChange={e => setAdditionalInfo(e.target.value)}
-            placeholder="Есть ли ещё что-то важное, о чем мы не спросили?"
+            onChange={(e: any) => setAdditionalInfo(e.target.value)}
+            label="7. Есть ли ещё что-то важное, о чем мы не спросили?"
           />
         </div>
 
@@ -354,11 +355,9 @@ const BriefScreen: React.FC = () => {
           Отправить
         </div>
 
-        <p style={{ textAlign: 'center' }}>
+        <p className="t4" style={{ textAlign: 'center' }}>
           Нажимая кнопку “Отправить”, вы соглашаетесь<br/>
-          <span className="privacyText">
-            с Политикой конфиденциальности.
-          </span>
+          <PoliticBtn/>
         </p>
 
       </div>

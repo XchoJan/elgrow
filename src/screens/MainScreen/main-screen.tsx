@@ -9,6 +9,7 @@ import Form from '../../components/form';
 import ContactUsBtnReversed from '../../components/contact-us-btn-reversed';
 import MenuItems from '../../components/menu-items';
 import FloatingInput from '../../components/floating-input';
+import MenuBtn from '../../components/menu-btn';
 
 const MainScreen: React.FC = () => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
@@ -31,7 +32,9 @@ const MainScreen: React.FC = () => {
             style={{
               borderColor: isHovered1 ? '#CFCFCF' : '#fff',
               cursor: 'pointer',
-              textDecoration: 'none'
+              textDecoration: 'none',
+              position: 'relative'
+
             }}
             className="rightElem ">
             <div className="rightElemTitleContainer main-link-1">
@@ -40,14 +43,15 @@ const MainScreen: React.FC = () => {
 
             <img
               style={{
-                paddingTop: '44%',
-                marginTop: isHovered1 ? '24px' : '0',
+                // marginTop: isHovered1 ? '24px' : '0',
                 opacity: isHovered1 ? 1 : 0,
+
               }}
               className="mainImages main-link-img-1"
-              src={require('../../assets/images/main1.png')}
+              src={require('../../assets/images/main1.jpg')}
               alt="Main Service"
             />
+            <div style={{ visibility: isHovered1 ? 'visible' : 'hidden' }} className="mainAbsoluteDiv"/>
           </Link>
 
           <Link
@@ -57,24 +61,27 @@ const MainScreen: React.FC = () => {
             style={{
               borderColor: isHovered2 ? '#CFCFCF' : '#fff',
               cursor: 'pointer',
-              textDecoration: 'none'
+              textDecoration: 'none',
+              position: 'relative'
             }}
             className="rightElem"
           >
             <div className="rightElemTitleContainer main-link-2">
-              <Tab elemIsHovered={isHovered2} title={'кейсы'} />
+              <Tab elemIsHovered={isHovered2} title={'клиенты'} />
             </div>
 
             <img
               style={{
-                paddingTop: '56%',
-                marginTop: isHovered2 ? '24px' : '0',
+                // paddingTop: '56%',
+                // marginTop: isHovered2 ? '24px' : '0',
                 opacity: isHovered2 ? 1 : 0,
               }}
               className="mainImages main-link-img-2"
-              src={require('../../assets/images/main2.png')}
+              src={require('../../assets/images/main2.jpg')}
               alt="Main Portfolio"
             />
+            <div style={{ visibility: isHovered2 ? 'visible' : 'hidden' }} className="mainAbsoluteDiv"/>
+
           </Link>
 
           <Link
@@ -84,7 +91,8 @@ const MainScreen: React.FC = () => {
             style={{
               borderColor: isHovered3 ? '#CFCFCF' : '#fff',
               cursor: 'pointer',
-              textDecoration: 'none'
+              textDecoration: 'none',
+              position: 'relative'
             }}
             className="rightElem "
           >
@@ -94,19 +102,21 @@ const MainScreen: React.FC = () => {
 
             <img
               style={{
-                paddingTop: '50%',
-                marginTop: isHovered3 ? '24px' : '0',
+                // paddingTop: '50%',
+                // marginTop: isHovered3 ? '24px' : '0',
                 opacity: isHovered3 ? 1 : 0,
               }}
               className="mainImages main-link-img-3"
-              src={require('../../assets/images/main3.png')}
+              src={require('../../assets/images/main3.jpg')}
               alt="Main Contacts"
             />
+            <div style={{ visibility: isHovered3 ? 'visible' : 'hidden' }} className="mainAbsoluteDiv"/>
+
           </Link>
         </div>
 
-        <MenuItems/>
-
+        {/*<MenuItems/>*/}
+        <MenuBtn/>
         <div
           onClick={() => setIsVisibleForm(true)}
           className="contactUsBtnContainer"

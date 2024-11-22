@@ -34,7 +34,7 @@ const ServicesScreen: React.FC = () => {
       stack: [
         { name: 'NodeJs', logoPath: NodeJsIcon },
         { name: 'PostgreSQL', logoPath: PostgreSQLIcon },
-        { id: 'onlyIcon', logoPath: MongoDBIcon },
+        { name: 'mongoDB', logoPath: MongoDBIcon },
         { name: 'ReactJS', logoPath: ReactJSIcon },
         { name: 'NestJS', logoPath: NestJSIcon },
         { name: 'VueJS', logoPath: VueJSIcon },
@@ -51,7 +51,7 @@ const ServicesScreen: React.FC = () => {
         { name: 'Java Spring', logoPath: JavaSpringIcon },
         { name: 'PostGIS', logoPath: PostGisIcon },
         { name: 'PostgreSQL', logoPath: PostgreSQLIcon },
-        { id: 'onlyIcon', logoPath: MongoDBIcon },
+        { name: 'mongoDB', logoPath: MongoDBIcon },
       ]
     },
     {
@@ -70,12 +70,12 @@ const ServicesScreen: React.FC = () => {
       name: 'E-commerce',
       description: 'Разработка крупных \n интернет-магазинов',
       stack: [
-        { id: 'onlyIcon', logoPath: OraclieIcon },
         { name: 'СБЕР Pay', logoPath:  EPayIcon },
-        { id: 'onlyIcon', logoPath: AmoCrm },
-        { id: 'onlyIcon', logoPath: BitrixIcon },
         { name: '1C', logoPath:  CIcon },
-        { name: 'Другое' }
+        { id: 'onlyIcon', logoPath: BitrixIcon },
+        { id: 'onlyIcon', logoPath: AmoCrm },
+        { id: 'onlyIcon', logoPath: OraclieIcon },
+        { name: 'Другое' },
       ]
     },
     {
@@ -87,7 +87,7 @@ const ServicesScreen: React.FC = () => {
         { name: 'Java Spring', logoPath: JavaSpringIcon },
         { name: 'PostGIS', logoPath: PostGisIcon },
         { name: 'PostgreSQL', logoPath: PostgreSQLIcon },
-        { logoPath: MongoDBIcon, id: 'onlyIcon' },
+        { name: 'mongoDB', logoPath: MongoDBIcon },
         { name: 'React Native', logoPath: ReactJSIcon },
         { name: 'Kotlin', logoPath: KotlinIcon },
         { name: 'C# .NET', logoPath:  CPlus },
@@ -107,7 +107,7 @@ const ServicesScreen: React.FC = () => {
     stack: [
       { name: 'NodeJs', logoPath: NodeJsIcon },
       { name: 'PostgreSQL', logoPath: PostgreSQLIcon },
-      { id: 'onlyIcon', logoPath: MongoDBIcon },
+      { name: 'mongoDB', logoPath: MongoDBIcon },
       { name: 'ReactJS', logoPath: ReactJSIcon },
       { name: 'NestJS', logoPath: NestJSIcon },
       { name: 'VueJS', logoPath: VueJSIcon },
@@ -120,6 +120,7 @@ const ServicesScreen: React.FC = () => {
         <Header  onPressContactUs={()=> setIsVisibleForm(true)} minHeight={true} />
       </div>
 
+      <div className="marginTop"/>
       <div className="servicesBox">
         <div style={{ position: 'relative', marginRight: '15%' }}>
           <div className="servicesFilters">
@@ -154,7 +155,7 @@ const ServicesScreen: React.FC = () => {
                   <img
                     style={
                       el.id === 'onlyIcon'
-                        ? { width: '88px', height: '24px' }
+                        ? { width: '88px', height: '30px' }
                         : {}
                     }
                     className="tecnology-logo"
@@ -162,7 +163,7 @@ const ServicesScreen: React.FC = () => {
                     alt=""
                   />
                 }
-                <p>{el?.name}</p>
+                <p style={{ lineHeight: 0, marginTop: '12px', fontSize: '16px' }} className="t3">{el?.name}</p>
               </div>
             ))}
 

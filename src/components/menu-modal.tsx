@@ -59,7 +59,7 @@ const MenuModal: React.FC<MenuModalProps> = ({ isVisible }: MenuModalProps) => {
             style={{ textDecoration: 'none', color: 'black' }}
             to={'/portfolio'}
           >
-            <span className="servicesTitles H1">Кейсы</span>
+            <span className="servicesTitles H1">Клиенты</span>
           </Link>
           <Link
             onClick={() => dispatch(setMenuVisibility(false))}

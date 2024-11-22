@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({ minHeight, onPressContactUs, showContac
             <div className="headeRrightElem">
               <Link style={{ textDecoration: 'none' }} to={'/portfolio'}>
                 <div className="rightElemTitleContainer">
-                  <Tab title={'кейсы'} isActive={isActive('/portfolio')} />
+                  <Tab title={'клиенты'} isActive={isActive('/portfolio')} />
                 </div>
               </Link>
             </div>

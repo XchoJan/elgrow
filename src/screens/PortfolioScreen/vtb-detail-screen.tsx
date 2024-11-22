@@ -12,7 +12,13 @@ import AnimatedCases from '../../components/animated-cases';
 
 const VtbDetailScreen: React.FC = () => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
-  const location = useLocation();
+
+
+  useEffect(() => {
+    document.body.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+
   const stack = [
     { name: 'C# .NET', logoPath:  CPlus },
   ];
@@ -70,13 +76,17 @@ const VtbDetailScreen: React.FC = () => {
       <div className="utg-next-cases-container">
         <PortfolioElem
           caseScreen={'/utg-detail'}
-          description={'Смотреть кейс'}
+          description={'Подробнее'}
           src={require('../../assets/images/portfolio2.png')}
+          title="UTG Учебный центр"
+          color="#fff"
         />
         <PortfolioElem
           caseScreen={'/cowberry-detail'}
-          description={'Смотреть кейс'}
+          description={'Подробнее'}
           src={require('../../assets/images/portfolio6.png')}
+          title="Брусника"
+          color="#fff"
         />
       </div>
 

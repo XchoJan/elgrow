@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { setMenuVisibility } from '../store/features/exampleSlice';
-
+import MenuIcon from '../assets/svg/burger.svg';
+import MenuIconHovered from '../assets/svg/hoveredBurger.svg';
 
 const MenuBtn: React.FC = () => {
   const dispatch = useDispatch();
+  const [closeIsHovered, setCloseIsHovered] = useState(false);
+
   return (
-    <div className="menuBtn">
-      <p
-        onClick={()=> dispatch(setMenuVisibility(true))}
-        style={{ cursor: 'pointer', fontWeight: '300', color: '#0D0D0D' }}
-      >
-        меню
-      </p>
+    <div
+      onMouseMove={()=> setCloseIsHovered(true)}
+      onMouseLeave={()=> setCloseIsHovered(false)}
+      onClick={()=> dispatch(setMenuVisibility(true))}
+      className="menuBtn"
+    >
+      <img src={closeIsHovered ? MenuIconHovered : MenuIcon}/>
     </div>
   );
 };

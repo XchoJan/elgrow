@@ -16,6 +16,11 @@ const UtgDetailScreen: React.FC = () =>{
   const [isVisibleForm, setIsVisibleForm] = useState(false);
 
 
+
+  useEffect(() => {
+    document.body.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return(
     <div>
       <div className="portfolioHeader">
@@ -170,13 +175,14 @@ const UtgDetailScreen: React.FC = () =>{
               <StackItem icon={ReactJSIcon} description={'React'}/>
             </div>
             <div>
-              <span className="stackTitle">Очереди</span>
-              <StackItem icon={RabbitIcon} description={'RabbitMQ'}/>
-            </div>
-            <div>
               <span className="stackTitle">База данных</span>
               <StackItem icon={PostgreSQLIcon} description={'PostgreSQL'}/>
             </div>
+            <div>
+              <span className="stackTitle">Очереди</span>
+              <StackItem icon={RabbitIcon} description={'RabbitMQ'}/>
+            </div>
+
             <div style={{ width: 'clamp(0rem, -1.32rem + 4.23vw, 3.75rem)' }}/>
           </div>
         </div>
@@ -188,8 +194,20 @@ const UtgDetailScreen: React.FC = () =>{
       </p>
 
       <div className="utg-next-cases-container">
-        <PortfolioElem caseScreen={'/vtb-detail'}  description={'Подробнее'} src={require('../../assets/images/portfolio1.png')}/>
-        <PortfolioElem caseScreen={'/cowberry-detail'}  description={'Подробнее'} src={require('../../assets/images/portfolio6.png')}/>
+        <PortfolioElem
+          caseScreen={'/vtb-detail'}
+          description={'Подробнее'}
+          src={require('../../assets/images/portfolio1.png')}
+          title="ВТБ"
+          color="#030303"
+        />
+        <PortfolioElem
+          caseScreen={'/cowberry-detail'}
+          description={'Подробнее'}
+          src={require('../../assets/images/portfolio6.png')}
+          title="Брусника"
+          color="#fff"
+        />
       </div>
 
       <div className="utg-all-cases">
