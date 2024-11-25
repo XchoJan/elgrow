@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/elgrow/static/css/main.d1b86722.css",
-    "main.js": "/elgrow/static/js/main.8c6c32a4.js",
+    "main.css": "/elgrow/static/css/main.240d2159.css",
+    "main.js": "/elgrow/static/js/main.81249496.js",
     "static/js/453.87808007.chunk.js": "/elgrow/static/js/453.87808007.chunk.js",
     "static/media/tellekom.png": "/elgrow/static/media/tellekom.57c9534f72c77c1591a9.png",
     "static/media/utgServices.png": "/elgrow/static/media/utgServices.37a670b63cf0c1c8fe6f.png",
@@ -85,12 +85,12 @@
     "static/media/burger.svg": "/elgrow/static/media/burger.bdacf9cb14142cd97455f40e1de8cc92.svg",
     "static/media/close.svg": "/elgrow/static/media/close.d0abef0a14c405b75c4152f978bf691e.svg",
     "static/media/hoveredCloseIcon.svg": "/elgrow/static/media/hoveredCloseIcon.f1623832bc63824e9f3e0fb57403b08d.svg",
-    "main.d1b86722.css.map": "/elgrow/static/css/main.d1b86722.css.map",
-    "main.8c6c32a4.js.map": "/elgrow/static/js/main.8c6c32a4.js.map",
+    "main.240d2159.css.map": "/elgrow/static/css/main.240d2159.css.map",
+    "main.81249496.js.map": "/elgrow/static/js/main.81249496.js.map",
     "453.87808007.chunk.js.map": "/elgrow/static/js/453.87808007.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1b86722.css",
-    "static/js/main.8c6c32a4.js"
+    "static/css/main.240d2159.css",
+    "static/js/main.81249496.js"
   ]
 }
