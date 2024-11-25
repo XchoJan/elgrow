@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/elgrow/static/css/main.d1b86722.css",
-    "main.js": "/elgrow/static/js/main.f6263031.js",
+    "main.js": "/elgrow/static/js/main.8c6c32a4.js",
     "static/js/453.87808007.chunk.js": "/elgrow/static/js/453.87808007.chunk.js",
-    "static/media/vid1.mp4": "/elgrow/static/media/vid1.38734bc87e88589ae7df.mp4",
     "static/media/tellekom.png": "/elgrow/static/media/tellekom.57c9534f72c77c1591a9.png",
     "static/media/utgServices.png": "/elgrow/static/media/utgServices.37a670b63cf0c1c8fe6f.png",
     "static/media/utg-first.png": "/elgrow/static/media/utg-first.822c6b975782ff5b9c4a.png",
     "static/media/geosys.png": "/elgrow/static/media/geosys.291a6f95536b685e2936.png",
+    "static/media/vid1.mp4": "/elgrow/static/media/vid1.7d6f7140f65c255717ce.mp4",
     "static/media/portfolio2.png": "/elgrow/static/media/portfolio2.5d7deada0803c8fb6ac3.png",
     "static/media/cowberryNew.png": "/elgrow/static/media/cowberryNew.b524e9505819f1fc68db.png",
     "static/media/vid2.mp4": "/elgrow/static/media/vid2.06672dbe0e44ae1fc4b5.mp4",
@@ -86,11 +86,11 @@
     "static/media/close.svg": "/elgrow/static/media/close.d0abef0a14c405b75c4152f978bf691e.svg",
     "static/media/hoveredCloseIcon.svg": "/elgrow/static/media/hoveredCloseIcon.f1623832bc63824e9f3e0fb57403b08d.svg",
     "main.d1b86722.css.map": "/elgrow/static/css/main.d1b86722.css.map",
-    "main.f6263031.js.map": "/elgrow/static/js/main.f6263031.js.map",
+    "main.8c6c32a4.js.map": "/elgrow/static/js/main.8c6c32a4.js.map",
     "453.87808007.chunk.js.map": "/elgrow/static/js/453.87808007.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1b86722.css",
-    "static/js/main.f6263031.js"
+    "static/js/main.8c6c32a4.js"
   ]
 }
