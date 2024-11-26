@@ -40,7 +40,7 @@ const BriefScreen: React.FC = () => {
 
   const budged = [
     { name: 'нужно уже вчера' },
-    { name: 'есть четкий дедлай' },
+    { name: 'есть четкий дедлайн' },
     { name: 'несрочная задача' },
   ];
 

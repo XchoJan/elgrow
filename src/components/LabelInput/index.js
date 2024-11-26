@@ -19,6 +19,8 @@ function LabelInput({
     inputRef.current.focus();
   };
 
+
+
   return (
     <div className={classNames(styles.wrapper, wrapperClassName)} onClick={onWrapperClick}>
       <div className={classNames(styles.labelSection)}>

@@ -24,38 +24,37 @@ import 'swiper/css/mousewheel';
 
 const PortfolioScreen: React.FC = () => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
-  const [activeLogo, setActiveLogo] = useState<any>(null);
   const swiperRef = useRef<any>(null);
-
+  const [activeLogoId, setActiveLogoId] = useState<any>(null); // состояние для активного логотипа по id
+  const [hoveredLogoId, setHoveredLogoId] = useState<any>(null);
 
   const images = [
-
     {
-      uri: require('../../assets/images/tellekom.png'),
+      uri: require('../../assets/images/utgServices.png'),
       description: 'Подробнее',
       screen: '',
-      title: 'Таттелеком',
+      title: 'UTG Услуги',
       color: '#FFFFFF',
-      size: { width: '72px', height: '18px' },
-      id: 7
+      size: { width: '81px', height: '20px' },
+      id:5125
     },
     {
-      uri: require('../../assets/images/luxxy.png'),
+      uri: require('../../assets/images/portfolio2.png'),
       description: 'Подробнее',
-      screen: '',
-      title: 'Luxxxy',
+      screen: '/utg-detail',
+      title: 'UTG Учебный центр',
       color: '#FFFFFF',
-      size: { width: '72px', height: '18px' },
-      id: 124
+      size: { width: '51px', height: '20px' },
+      id: 3123
     },
     {
-      uri: require('../../assets/images/mamado.png'),
+      uri: require('../../assets/images/portfolio3.png'),
       description: 'Подробнее',
-      screen: '',
-      title: 'Mamado',
+      screen: '/utg-support',
+      title: 'UTG поддержка корпоративных сайтов\nи клиентских сервисов',
       color: '#FFFFFF',
-      size: { width: '28px', height: '28px' },
-      id: 123
+      size: { width: '81px', height: '20px' },
+      id: 5
     },
     {
       uri: require('../../assets/images/portfolio1.png'),
@@ -65,7 +64,9 @@ const PortfolioScreen: React.FC = () => {
       color: '#303030',
       icon: VtbIcon,
       size: { width: '56px', height: '20px' },
-      id: 1
+      id: 1,
+      activeSize: { width: '79px', height: '28px' },
+
     },
     {
       uri: require('../../assets/images/portfolio6.png'),
@@ -75,6 +76,7 @@ const PortfolioScreen: React.FC = () => {
       color: '#FFFFFF',
       icon: CowberryIcon,
       size: { width: '128px', height: '20px' },
+      activeSize: { width: '180px', height: '28px' },
       id: 2
     },
     {
@@ -85,6 +87,8 @@ const PortfolioScreen: React.FC = () => {
       color: '#FFFFFF',
       icon: UtgAviaIcon,
       size: { width: '51px', height: '20px' },
+      activeSize: { width: '72px', height: '28px' },
+
       id: 3
     },
     {
@@ -113,6 +117,7 @@ const PortfolioScreen: React.FC = () => {
       color: '#FFFFFF',
       icon: NesspressoIcon,
       size: { width: '100px', height: '20px' },
+      activeSize: { width: '170px', height: '28px' },
       id: 6
     },
     {
@@ -122,39 +127,40 @@ const PortfolioScreen: React.FC = () => {
       title: 'Таттелеком',
       color: '#FFFFFF',
       icon: TelekomIcon,
-      size: { width: '72px', height: '18px' },
+      size: { width: '101px', height: '20px' },
+      activeSize: { width: '159px', height: '28px' },
       id: 7
     },
-    {
-      uri: require('../../assets/images/luxxy.png'),
-      description: 'Подробнее',
-      screen: '',
-      title: 'Luxxxy',
-      color: '#FFFFFF',
-      icon: LuxyIcon,
-      size: { width: '72px', height: '18px' },
-      id: 8
-    },
-    {
-      uri: require('../../assets/images/mamado.png'),
-      description: 'Подробнее',
-      screen: '',
-      title: 'Mamado',
-      color: '#FFFFFF',
-      icon: MamadoIcon,
-      size: { width: '28px', height: '28px' },
-      id: 9
-    },
-    {
-      uri: require('../../assets/images/svarlodskaya.png'),
-      description: 'Подробнее',
-      screen: '',
-      title: 'Свердловская киностудия',
-      color: '#FFFFFF',
-      icon: SverlodIcon,
-      size: { width: '81px', height: '28px' },
-      id: 10
-    }
+    // {
+    //   uri: require('../../assets/images/luxxy.png'),
+    //   description: 'Подробнее',
+    //   screen: '',
+    //   title: 'Luxxxy',
+    //   color: '#FFFFFF',
+    //   icon: LuxyIcon,
+    //   size: { width: '72px', height: '18px' },
+    //   id: 8
+    // },
+    // {
+    //   uri: require('../../assets/images/mamado.png'),
+    //   description: 'Подробнее',
+    //   screen: '',
+    //   title: 'Mamado',
+    //   color: '#FFFFFF',
+    //   icon: MamadoIcon,
+    //   size: { width: '28px', height: '28px' },
+    //   id: 9
+    // },
+    // {
+    //   uri: require('../../assets/images/svarlodskaya.png'),
+    //   description: 'Подробнее',
+    //   screen: '',
+    //   title: 'Свердловская киностудия',
+    //   color: '#FFFFFF',
+    //   icon: SverlodIcon,
+    //   size: { width: '81px', height: '28px' },
+    //   id: 10
+    // }
   ];
 
   const images2 = [
@@ -223,39 +229,39 @@ const PortfolioScreen: React.FC = () => {
       title: 'Таттелеком',
       color: '#FFFFFF',
       icon: TelekomIcon,
-      size: { width: '72px', height: '18px' },
+      size: { width: '101px', height: '20px' },
       id: 7
     },
-    {
-      uri: require('../../assets/images/luxxy.png'),
-      description: 'Подробнее',
-      screen: '',
-      title: 'Luxxxy',
-      color: '#FFFFFF',
-      icon: LuxyIcon,
-      size: { width: '72px', height: '18px' },
-      id: 8
-    },
-    {
-      uri: require('../../assets/images/mamado.png'),
-      description: 'Подробнее',
-      screen: '',
-      title: 'Mamado',
-      color: '#FFFFFF',
-      icon: MamadoIcon,
-      size: { width: '28px', height: '28px' },
-      id: 9
-    },
-    {
-      uri: require('../../assets/images/svarlodskaya.png'),
-      description: 'Подробнее',
-      screen: '',
-      title: 'Свердловская киностудия',
-      color: '#FFFFFF',
-      icon: SverlodIcon,
-      size: { width: '81px', height: '28px' },
-      id: 10
-    }
+    // {
+    //   uri: require('../../assets/images/luxxy.png'),
+    //   description: 'Подробнее',
+    //   screen: '',
+    //   title: 'Luxxxy',
+    //   color: '#FFFFFF',
+    //   icon: LuxyIcon,
+    //   size: { width: '72px', height: '18px' },
+    //   id: 8
+    // },
+    // {
+    //   uri: require('../../assets/images/mamado.png'),
+    //   description: 'Подробнее',
+    //   screen: '',
+    //   title: 'Mamado',
+    //   color: '#FFFFFF',
+    //   icon: MamadoIcon,
+    //   size: { width: '28px', height: '28px' },
+    //   id: 9
+    // },
+    // {
+    //   uri: require('../../assets/images/svarlodskaya.png'),
+    //   description: 'Подробнее',
+    //   screen: '',
+    //   title: 'Свердловская киностудия',
+    //   color: '#FFFFFF',
+    //   icon: SverlodIcon,
+    //   size: { width: '81px', height: '28px' },
+    //   id: 10
+    // }
   ];
 
   const imageRefs = useRef<HTMLDivElement[]>([]);
@@ -269,7 +275,7 @@ const PortfolioScreen: React.FC = () => {
   useEffect(() => {
     const syncActiveIndex = () => {
       if (swiperRef.current) {
-        setActiveLogo(swiperRef.current.realIndex);
+        // setActiveLogoId(swiperRef.current.realIndex);
       }
     };
 
@@ -285,6 +291,9 @@ const PortfolioScreen: React.FC = () => {
   }, []);
 
 
+  useEffect(()=>{
+    handleIconClick(2);
+  }, []);
 
 
   return (
@@ -298,27 +307,27 @@ const PortfolioScreen: React.FC = () => {
         </div>
         <div>
           <div className="portfolio-logo-container">
-            {images.map(
-              (el, index) =>
-                el.icon && (
-                  <img
-                    onMouseMove={() => setActiveLogo(index)}
-                    onMouseLeave={() => setActiveLogo(null)}
-                    key={index}
-                    style={{
-                      ...el.size,
-                      opacity:
-                        activeLogo !== null && activeLogo !== index ? 0.6 : 1,
-                      marginBottom: 16
-                    }}
-                    src={el.icon}
-                    alt=""
-                    className="protfolio-logo"
-                    onClick={() => {
-                      handleIconClick(index === 0 ? index : index - 1);
-                    }}
-                  />
-                ),
+            {images.map((el, index) =>
+              el.icon ? (
+                <img
+                  onMouseEnter={() => setHoveredLogoId(el.id)} // Увеличиваем при наведении
+                  onMouseLeave={() => setHoveredLogoId(null)} // Сбрасываем размер при уходе мыши
+                  key={index}
+                  style={{
+                    ...el.size,
+                    transition: 'all 0.3s ease', // плавность при изменении
+                    opacity: (activeLogoId === el.id || hoveredLogoId === el.id) ? 0.6 : 1, // добавляем opacity
+                  }}
+                  src={el.icon}
+                  alt=""
+                  className="protfolio-logo"
+                  onClick={() => {
+                    // При клике устанавливаем активный логотип
+                    setActiveLogoId(el.id);
+                    handleIconClick(index === 0 ? index : index - 1);
+                  }}
+                />
+              ) : null
             )}
           </div>
 
@@ -326,7 +335,7 @@ const PortfolioScreen: React.FC = () => {
 
 
             <Swiper
-              slidesPerView={2.5}
+              slidesPerView={2.2}
               freemode
               spaceBetween={30}
               loop={true}
@@ -353,7 +362,7 @@ const PortfolioScreen: React.FC = () => {
                         </Link>
                       </div>
                     </div>
-                    <p style={{ marginTop: 0 }} className="H2">
+                    <p style={{ marginTop: 0, fontWeight: 300 }} className="H3">
                       {el.title}
                     </p>
                   </div>
@@ -372,7 +381,7 @@ const PortfolioScreen: React.FC = () => {
                 <div style={{ position: 'relative' }}>
                   <img src={el.uri} alt="" className="portfolio-image" />
                 </div>
-                <p style={{ marginTop: 0 }} className="H2">
+                <p style={{ marginTop: 0 }} className="H3">
                   {el.title}
                 </p>
                 <div style={{ marginBottom: '40px' }}/>

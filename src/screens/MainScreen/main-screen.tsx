@@ -41,17 +41,27 @@ const MainScreen: React.FC = () => {
               <Tab elemIsHovered={isHovered1} title={'услуги'} />
             </div>
 
-            <img
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               style={{
-                // marginTop: isHovered1 ? '24px' : '0',
                 opacity: isHovered1 ? 1 : 0,
 
               }}
               className="mainImages main-link-img-1"
-              src={require('../../assets/images/main1.jpg')}
-              alt="Main Service"
-            />
-            <div style={{ visibility: isHovered1 ? 'visible' : 'hidden' }} className="mainAbsoluteDiv"/>
+
+            >
+              <source src={require('../../assets/gif/vid1.mp4')} type="video/mp4" />
+            </video>
+
+            {/*<img*/}
+            {/* */}
+            {/*  src={require('../../assets/images/main1.jpg')}*/}
+            {/*  alt="Main Service"*/}
+            {/*/>*/}
+            {/*<div style={{ visibility: isHovered1 ? 'visible' : 'hidden' }} className="mainAbsoluteDiv"/>*/}
           </Link>
 
           <Link
@@ -67,19 +77,34 @@ const MainScreen: React.FC = () => {
             className="rightElem"
           >
             <div className="rightElemTitleContainer main-link-2">
-              <Tab elemIsHovered={isHovered2} title={'клиенты'} />
+              <Tab  elemIsHovered={isHovered2}   title={'клиенты'} />
             </div>
 
-            <img
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               style={{
-                // paddingTop: '56%',
-                // marginTop: isHovered2 ? '24px' : '0',
                 opacity: isHovered2 ? 1 : 0,
+
               }}
-              className="mainImages main-link-img-2"
-              src={require('../../assets/images/main2.jpg')}
-              alt="Main Portfolio"
-            />
+              className="mainImages main-link-img-1"
+
+            >
+              <source src={require('../../assets/gif/vid2.mp4')} type="video/mp4" />
+            </video>
+
+            {/*<img*/}
+            {/*  style={{*/}
+            {/*    // paddingTop: '56%',*/}
+            {/*    // marginTop: isHovered2 ? '24px' : '0',*/}
+            {/*    opacity: isHovered2 ? 1 : 0,*/}
+            {/*  }}*/}
+            {/*  className="mainImages main-link-img-2"*/}
+            {/*  src={require('../../assets/images/main2.jpg')}*/}
+            {/*  alt="Main Portfolio"*/}
+            {/*/>*/}
             <div style={{ visibility: isHovered2 ? 'visible' : 'hidden' }} className="mainAbsoluteDiv"/>
 
           </Link>
@@ -97,19 +122,33 @@ const MainScreen: React.FC = () => {
             className="rightElem "
           >
             <div className="rightElemTitleContainer main-link-3">
-              <Tab elemIsHovered={isHovered3} title={'контакты'} />
+              <Tab  elemIsHovered={isHovered3}  title={'контакты'} />
             </div>
 
-            <img
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               style={{
-                // paddingTop: '50%',
-                // marginTop: isHovered3 ? '24px' : '0',
                 opacity: isHovered3 ? 1 : 0,
               }}
-              className="mainImages main-link-img-3"
-              src={require('../../assets/images/main3.jpg')}
-              alt="Main Contacts"
-            />
+              className="mainImages main-link-img-1"
+            >
+              <source src={require('../../assets/gif/vid3.mp4')} type="video/mp4" />
+            </video>
+
+
+            {/*<img*/}
+            {/*  style={{*/}
+            {/*    // paddingTop: '50%',*/}
+            {/*    // marginTop: isHovered3 ? '24px' : '0',*/}
+            {/*    opacity: isHovered3 ? 1 : 0,*/}
+            {/*  }}*/}
+            {/*  className="mainImages main-link-img-3"*/}
+            {/*  src={require('../../assets/images/main3.jpg')}*/}
+            {/*  alt="Main Contacts"*/}
+            {/*/>*/}
             <div style={{ visibility: isHovered3 ? 'visible' : 'hidden' }} className="mainAbsoluteDiv"/>
 
           </Link>

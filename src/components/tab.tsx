@@ -8,21 +8,22 @@ interface TabProps {
   elemIsHovered?: boolean;
 }
 
-const Tab: React.FC<TabProps> = ({ title, isActive, elemIsHovered }) => (
+const Tab: React.FC<TabProps> = ({ title, isActive = false, elemIsHovered = false }) => (
   <span className={`tabContainer ${isActive ? 'active' : ''}`}>
     <span
       className="rightElemTitle t3"
       style={{
         fontSize: '20px',
-        color: isActive ? '#808080' : elemIsHovered ? 'white' : '#303030',
-
+        color: '#303030',
       }}
-    >{title}</span>
-    {/*<img*/}
-    {/*  className={`subtract ${isActive  ? 'visible' : ''}`}*/}
-    {/*  src={Subtract}*/}
-    {/*  alt=""*/}
-    {/*/>*/}
+    >
+      {title}
+    </span>
+    <img
+      className={`subtract ${isActive || elemIsHovered ? 'visible' : ''}`}
+      src={Subtract}
+      alt=""
+    />
   </span>
 );
 
